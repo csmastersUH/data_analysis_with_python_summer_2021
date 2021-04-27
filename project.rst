@@ -7,7 +7,7 @@ Choose a project work. There are three projects to choose from:
 2. regression analysis on medical data (part08)
 3. fossil data analysis 
 
-The fossil data analysis project is currently not integrated to the TMC system, so for that, see the instructions from the `course page <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_.
+The fossil data analysis project is currently not integrated to the TMC system, so for that, see the instructions from the `course page <https://studies.helsinki.fi/courses/cur/hy-CUR-139313455/Open_uni_Data_Analysis_with_Python_Summer_2021>`_.
 
 For the two first projects (part07 and part08), download the exercises
 and/or notebooks from the TMC server.
@@ -23,7 +23,7 @@ of exercises are done in each project.
 
 Save the report as a Jupyter notebook file (with ``ipynb`` extension)
 and submit this file to Moodle. After this you will need to give feedback for your own
-report and two other reports. See the `course page <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_ for instructions on this peer-review process.  
+report and two other reports. See the `course page <https://studies.helsinki.fi/courses/cur/hy-CUR-139313455/Open_uni_Data_Analysis_with_Python_Summer_2021>`_ for instructions on this peer-review process.  
 
 Sequence analysis
 -----------------
@@ -51,7 +51,7 @@ NOTE. Exercises in section "Stationary and equilibrium distributions (extra)"
 Regression analysis
 -------------------
 
-Read the introduction ``introduction-to-regression-analysis.pdf`` from the `course webpage <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_.
+Read the introduction ``introduction-to-regression-analysis.pdf`` from the `course webpage <https://studies.helsinki.fi/courses/cur/hy-CUR-139313455/Open_uni_Data_Analysis_with_Python_Summer_2021>`_.
 
 Write solutions to exercises directly into the cells of the given Jupyter notebook.
 Do not modify lines that say ``# exercise x``; without those the tests won't work.
