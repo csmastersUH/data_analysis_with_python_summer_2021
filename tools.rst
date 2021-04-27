@@ -57,7 +57,7 @@ to open the notebook in Google's colab service. There it is possible
 to edit code and re-execute it.
 
 Alternatively, you can download the notebooks with command
-``git clone https://github.com/csmastersUH/data_analysis_with_python_summer_2021``. Then start
+``git clone https://github.com/csmastersUH/data_analysis_with_python_2020``. Then start
 Jupyter notebook with command ``jupyter-notebook``.
 
 Executing a file containing Python code
@@ -81,9 +81,9 @@ Correct software versions
 -------------------------
 
 It can be that the command ``python`` still refers to the old python2 version.
-This course relies completely on a newer python version. Therefore I have
-used the command ``python3`` everywhere to be sure the old version python2
-is not used. You can check the version number with the ``--version`` option.
+This course relies completely on a newer python version. Therefore you may need
+to use the command ``python3`` to be sure the old version python2 is not used. 
+You can check the version number with the ``--version`` option.
 For example in the following way:
 
 .. code-block:: none
@@ -122,7 +122,7 @@ The versions of additional libraries that are know to work are:
 
 More recent versions should work as well. You can check the software
 version of your installation with the following Python script:
-`versions.py <https://raw.githubusercontent.com/csmastersUH/data_analysis_with_python_summer_2021/master/versions.py>`_
-Download the script and execute it with ``python3 versions.py``.
+`versions.py <https://raw.githubusercontent.com/csmastersUH/data_analysis_with_python_2020/master/versions.py>`_
+Download the script and execute it with ``python versions.py``.
 
 
