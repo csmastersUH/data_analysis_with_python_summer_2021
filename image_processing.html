@@ -362,7 +362,7 @@ This page was generated from <a class="reference external" href="https://github.
 <h1>Image processing<a class="headerlink" href="#Image-processing" title="Permalink to this headline">¶</a></h1>
 <p>An image is a collection of <em>pixels</em>, which is abbreviation for picture elements. A grayscale image can be represented as as two dimensional array, whose first axis corresponds to the x coordinate of the image and the second axis corresponds to the y coordinate. The array contains at each coordinate pair (x,y) a value, which is typically a float between 0.0 and 1.0, or an integer between 0 and 255. This specifies the level of grayness. For example, if the array contains value 255 at coordinates
 (0,0), then in the image the pixel at top left is white.</p>
-<p>In color images there is third axis is for the red, green, and blue components of each pixel. For each of these color components there is a value between 0.1 and 1.0 (or between 0 and 255). The combinations of different values for the three components red, green, and blue can result in at least 16.7 million colors.</p>
+<p>In color images there is third axis is for the red, green, and blue components of each pixel. For each of these color components there is a value between 0.0 and 1.0 (or between 0 and 255). The combinations of different values for the three components red, green, and blue can result in at least 16.7 million colors.</p>
 <p>Since images can be represented as multidimensional arrays, we can easily process images using NumPy functions. Let’s see examples of these.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:

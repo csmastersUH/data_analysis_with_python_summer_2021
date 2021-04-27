@@ -1116,6 +1116,7 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 <li>drops the <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column and replaces it with its splitted components as before</li>
 </ul>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">concat</span></code> function to do this. The function should return a DataFrame with 25 columns (first five related to the date and then the rest 20 conserning the measument location.</p>
+<p><strong>Hint</strong>: You may use your solution or the model solution from exercise 16 of the previous set as a starting point.</p>
 <hr/></div>
 <div class="section" id="Merging-dataframes">
 <h2>Merging dataframes<a class="headerlink" href="#Merging-dataframes" title="Permalink to this headline">¶</a></h2>
@@ -1687,7 +1688,7 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">wh</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://www.cs.helsinki.fi/u/jttoivon/dap/data/fmi/kumpula-weather-2017.csv"</span><span class="p">)</span>
+<span></span><span class="n">wh</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/csmastersUH/data_analysis_with_python_2020/master/kumpula-weather-2017.csv"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1811,7 +1812,7 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>&lt;pandas.core.groupby.groupby.DataFrameGroupBy object at 0x7fac65c2dba8&gt;
+<span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7fa1a21d32b0&gt;
 </pre></div>
 </div>
 </div>
@@ -2234,7 +2235,7 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 </pre></div>
 </div>
 <div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>&lt;pandas.core.groupby.groupby.SeriesGroupBy object at 0x7fac65c075c0&gt;
+<span></span>&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x7fa15af92be0&gt;
 </pre></div>
 </div>
 </div>

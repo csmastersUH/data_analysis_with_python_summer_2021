@@ -458,15 +458,15 @@ This page was generated from <a class="reference external" href="https://github.
 <tbody>
 <tr>
 <th>a</th>
-<td>-1.764508</td>
-<td>0.466534</td>
-<td>0.009048</td>
+<td>1.273012</td>
+<td>-1.645268</td>
+<td>0.133877</td>
 </tr>
 <tr>
 <th>b</th>
-<td>1.299110</td>
-<td>-0.599233</td>
-<td>0.369803</td>
+<td>0.742194</td>
+<td>-0.225893</td>
+<td>2.600842</td>
 </tr>
 </tbody>
 </table>
@@ -551,15 +551,15 @@ This page was generated from <a class="reference external" href="https://github.
 <tbody>
 <tr>
 <th>a</th>
-<td>1.894450</td>
-<td>-0.764813</td>
-<td>1.758773</td>
+<td>0.095937</td>
+<td>-0.688698</td>
+<td>0.653831</td>
 </tr>
 <tr>
 <th>b</th>
-<td>0.558283</td>
-<td>1.495585</td>
-<td>0.051061</td>
+<td>0.978782</td>
+<td>0.034069</td>
+<td>1.125257</td>
 </tr>
 </tbody>
 </table>
@@ -1283,7 +1283,7 @@ Name: 1, dtype: object
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">wh</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://www.cs.helsinki.fi/u/jttoivon/dap/data/fmi/kumpula-weather-2017.csv"</span><span class="p">)</span>
+<span></span><span class="n">wh</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/csmastersUH/data_analysis_with_python_2020/master/kumpula-weather-2017.csv"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2924,7 +2924,7 @@ dtype: object
 <hr/><hr class="docutils"/>
 <div class="admonition note"><a id="Exercise-17-(cleaning-data)">Exercise 17 (cleaning data)</a></div>
 <p>This exercise can give two points at maximum!</p>
-<p>The entries in the following table of US presidents are not uniformly formatted. Make function <code class="docutils literal notranslate"><span class="pre">cleaning_data</span></code> that reads the table from the tsv file <code class="docutils literal notranslate"><span class="pre">src/presidents.tsv</span></code> and returns the cleaned version of it. Note, you must do the edits programmatically using the string edit methods, not by creating a new DataFrame by hand. The columns should have <code class="docutils literal notranslate"><span class="pre">dtype</span></code>s <code class="docutils literal notranslate"><span class="pre">object</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">object</span></code>. The <code class="docutils literal notranslate"><span class="pre">where</span></code> method of DataFrames can be helpful, likewise the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/api.html#string-handling">string
+<p>The entries in the following table of US presidents are not uniformly formatted. Make function <code class="docutils literal notranslate"><span class="pre">cleaning_data</span></code> that reads the table from the tsv file <code class="docutils literal notranslate"><span class="pre">src/presidents.tsv</span></code> and returns the cleaned version of it. Note, you must do the edits programmatically using the string edit methods, not by creating a new DataFrame by hand. The columns should have <code class="docutils literal notranslate"><span class="pre">dtype</span></code>s <code class="docutils literal notranslate"><span class="pre">object</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">object</span></code>. The <code class="docutils literal notranslate"><span class="pre">where</span></code> method of DataFrames can be helpful, likewise the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/text.html#string-methods">string
 methods</a> of Series objects. You get an additional point, if you manage to get the columns President and Vice-president right!</p>
 <table border="1" class="docutils">
 <colgroup>

@@ -470,7 +470,7 @@ True
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">a</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://www.cs.helsinki.fi/u/jttoivon/dap/data/fmi/kumpula-weather-2017.csv"</span><span class="p">)[</span><span class="s1">'Air temperature (degC)'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">a</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/csmastersUH/data_analysis_with_python_2020/master/kumpula-weather-2017.csv"</span><span class="p">)[</span><span class="s1">'Air temperature (degC)'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 </pre></div>
 </div>
 </div>
@@ -1158,13 +1158,13 @@ Inverted matrix:
  [ 0.56666667  0.3        -0.53333333]
  [-0.25555556 -0.23333333  0.37777778]]
 Matrix product:
-[[  1.00000000e+00  -2.77555756e-17   3.33066907e-16]
+[[  1.00000000e+00   0.00000000e+00   4.44089210e-16]
  [  7.21644966e-16   1.00000000e+00   1.11022302e-16]
- [  0.00000000e+00  -2.22044605e-16   1.00000000e+00]]
+ [ -4.44089210e-16  -2.22044605e-16   1.00000000e+00]]
 Matrix product the other way:
-[[  1.00000000e+00  -5.55111512e-16   0.00000000e+00]
- [ -2.22044605e-16   1.00000000e+00   8.88178420e-16]
- [  1.11022302e-16  -3.33066907e-16   1.00000000e+00]]
+[[  1.00000000e+00  -8.88178420e-16   0.00000000e+00]
+ [  4.44089210e-16   1.00000000e+00   8.88178420e-16]
+ [  0.00000000e+00  -4.44089210e-16   1.00000000e+00]]
 </pre></div></div>
 </div>
 <p>Let’s try mapping a vector with the matrix and its inverse:</p>
@@ -1207,22 +1207,6 @@ Matrix product the other way:
 <p>Part 1. What is the Pearson correlation between the variables <code class="docutils literal notranslate"><span class="pre">sepal</span> <span class="pre">length</span></code> and <code class="docutils literal notranslate"><span class="pre">petal</span> <span class="pre">length</span></code>. Compute this using the <code class="docutils literal notranslate"><span class="pre">scipy.stats.pearsonr</span></code> function. It returns a tuple whose first element is the correlation. Write a function <code class="docutils literal notranslate"><span class="pre">lengths</span></code> that loads the data and returns the correlation.</p>
 <p>Part 2. What are the correlations between all the variables. Write a function <code class="docutils literal notranslate"><span class="pre">correlations</span></code> that returns an array of shape (4,4) containing the correlations. Use the function <code class="docutils literal notranslate"><span class="pre">np.corrcoef</span></code>. Which pair of variables is the most highly correlated?</p>
 <p>Note the input formats of both functions <code class="docutils literal notranslate"><span class="pre">pearsonr</span></code> and <code class="docutils literal notranslate"><span class="pre">corrcoef</span></code>.</p>
-<p><strong>Note.</strong> There is a problem with the definition of load function in that it tries to load the data from the internet if it isn’t in the cache. This may cause failure when submitting, since the internet connection from the test server to the internet is restricted. To fix this, first store the data in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. Then you can load the data in your program with the following modified version of the <code class="docutils literal notranslate"><span class="pre">load</span></code> function.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_path</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-    <span class="kn">import</span> <span class="nn">sys</span>
-    <span class="kn">import</span> <span class="nn">os</span>
-    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="s2">".."</span><span class="p">,</span> <span class="s2">"src"</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">load</span><span class="p">():</span>
-    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">get_path</span><span class="p">(</span><span class="s2">"iris.csv"</span><span class="p">))</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">'species'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
-</pre></div>
-</div>
-<p>To store the data on disk give the following line in IPython shell or in Jupyter:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span><span class="p">;</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">"iris"</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"iris.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>And make sure the created file <code class="docutils literal notranslate"><span class="pre">iris.csv</span></code> is located in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder.</p>
 <hr/></div>
 <div class="section" id="Solving-system-of-linear-equations">
 <h2>Solving system of linear equations<a class="headerlink" href="#Solving-system-of-linear-equations" title="Permalink to this headline">¶</a></h2>

@@ -3,8 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. raw:: html
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47575342-12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-47575342-12');
+    </script>
+
 Welcome to Data analysis with Python - Summer 2021
 ==================================================
+
+**NOTE:** please check for the course practicalities, e.g., 
+how to pass the course, schedules, and deadlines, at the 
+`official course page <https://studies.helsinki.fi/courses/cur/hy-CUR-139313455/Open_uni_Data_Analysis_with_Python_Summer_2021>`__. 
+This course is available until September 15, 2021 (recommended latest starting date August 1, 2021).
 
 In this course an overview is given of different phases
 of the data analysis pipeline using Python and its data analysis

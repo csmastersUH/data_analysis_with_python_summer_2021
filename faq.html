@@ -46,16 +46,17 @@
 <li class="toctree-l1"><a class="reference internal" href="instructions.html">Initializing course environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Running Python code</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently asked questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#when-logging-to-tmc-first-time-whats-the-server-address-it-asks">When logging to tmc first time, whats the server address it asks?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tmc-login-crashes-with-mention-of-tmc-cli-log">TMC login crashes (with mention of tmc-cli.log)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tmc-test-fails-but-all-other-commands-including-submit-work">TMC test fails but all other commands (including submit) work</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#stuff-generally-doesn-t-seem-to-work-in-the-conda-prompt-on-windows">Stuff generally doesn’t seem to work in the conda prompt on Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tmc-not-found">tmc not found</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tmc-test-says-test-results-0-0-tests-passed"><cite>tmc test</cite> says: “Test results: 0/0 tests passed”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-version-of-python-should-i-use-what-is-the-name-of-the-executable">What version of Python should I use? What is the name of the executable?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-load-a-file-that-resides-in-the-src-folder">How to load a file that resides in the src folder?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tests-complain-about-missing-attribute-assert-called-assert-called-once">Tests complain about missing attribute assert_called, assert_called_once, …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-when-testing-part01-e09">Problem when testing part01-e09</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#modulenotfounderror-no-module-named-somelibrary">ModuleNotFoundError: No module named ‘somelibrary’</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-version-of-python-should-i-use-what-is-the-name-of-the-executable">What version of Python should I use? What is the name of the executable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stuff-generally-doesn-t-seem-to-work-in-the-conda-prompt-on-windows">Stuff generally doesn’t seem to work in the conda prompt on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tmc-test-fails-but-all-other-commands-including-submit-work">TMC test fails but all other commands (including submit) work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#when-logging-to-tmc-first-time-whats-the-server-address-it-asks">When logging to tmc first time, whats the server address it asks?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tmc-login-crashes-with-mention-of-tmc-cli-log">TMC login crashes (with mention of tmc-cli.log)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tmc-not-found">tmc not found</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tmc-test-says-test-results-0-0-tests-passed"><cite>tmc test</cite> says: “Test results: 0/0 tests passed”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#i-cannot-understand-the-error-message-from-a-failed-test-case">I cannot understand the error message from a failed test case</a></li>
 </ul>
 </li>
@@ -143,6 +144,70 @@
 </style>
 <div class="section" id="frequently-asked-questions">
 <h1>Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-to-load-a-file-that-resides-in-the-src-folder">
+<h2>How to load a file that resides in the src folder?<a class="headerlink" href="#how-to-load-a-file-that-resides-in-the-src-folder" title="Permalink to this headline">¶</a></h2>
+<p>TMC runs code from the project root. So for python to find <code class="docutils literal notranslate"><span class="pre">file.txt</span></code>, you need to pass it
+the folder as well. That is <code class="docutils literal notranslate"><span class="pre">src/file.txt</span></code>.</p>
+<p>However, if you are requested to write a function, say <code class="docutils literal notranslate"><span class="pre">f</span></code>, that gets a filename as a parameter,
+then setting the correct file path is the responsibility of the caller of <code class="docutils literal notranslate"><span class="pre">f</span></code>. If the filename comes from
+the command line parameters (<code class="docutils literal notranslate"><span class="pre">sys.argv</span></code>), then it is the responsibility of the person
+who runs the program to provide the correct path, like <code class="docutils literal notranslate"><span class="pre">src/file.txt</span></code>.</p>
+</div>
+<div class="section" id="tests-complain-about-missing-attribute-assert-called-assert-called-once">
+<h2>Tests complain about missing attribute assert_called, assert_called_once, …<a class="headerlink" href="#tests-complain-about-missing-attribute-assert-called-assert-called-once" title="Permalink to this headline">¶</a></h2>
+<p>These require at least Python version 3.6. Check your installation. See the next question.</p>
+</div>
+<div class="section" id="problem-when-testing-part01-e09">
+<h2>Problem when testing part01-e09<a class="headerlink" href="#problem-when-testing-part01-e09" title="Permalink to this headline">¶</a></h2>
+<p>This is likely due to the tests using the numpy library and the library not being available to the test program.</p>
+<p>See the next topic.</p>
+</div>
+<div class="section" id="modulenotfounderror-no-module-named-somelibrary">
+<h2>ModuleNotFoundError: No module named ‘somelibrary’<a class="headerlink" href="#modulenotfounderror-no-module-named-somelibrary" title="Permalink to this headline">¶</a></h2>
+<p>The libraries needed in the course (numpy, pandas, matplotlib, scikit-learn, scipy, seaborn, and statsmodels)
+are contained in the Anaconda distribution. Either you haven’t installed Anaconda or it hasn’t been activated.</p>
+<p>If you are using VSCode, the best way is to start VSCode from the anaconda navigator. If this does not work for you,
+try selecting a python interpreter that has the necessary libraries by accessing the “Python: Select interpreter” option
+from the Command palette (CTRL + SHIFT + P), and selecting a python 3.6 or higher with conda or anaconda in the path.</p>
+<p><strong>For non-Anaconda and/or non-VSCode users:</strong></p>
+<p>On Windows it may help, if you use ‘Anaconda prompt’ from the Windows menu.
+That should activate Anaconda automatically.</p>
+<p>If you don’t want to use ‘Anaconda prompt’, then in command prompt
+try <code class="docutils literal notranslate"><span class="pre">where</span> <span class="pre">python</span></code> to see if it finds Python under
+Anaconda’s folder. If not, try to activate Anaconda with
+<code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\AppData\Local\Continuum\Anaconda3\Scripts\activate</span></code>
+Or something similar, depending where you installed it.</p>
+<p>On Linux/macOS:</p>
+<p>You can check whether Anaconda is active with the command <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python3</span></code>.
+If the python3 binary is under anaconda3 folder, then Anaconda is active.
+If you are sure you have already installed Anaconda, then
+you can activate it with</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code>, or</li>
+<li><code class="docutils literal notranslate"><span class="pre">~/acaconda3/bin/conda</span> <span class="pre">activate</span></code> (or where ever Anaconda is installed)</li>
+<li>On older Anaconda distributions use: <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/anaconda3/bin/activate</span></code></li>
+</ul>
+<p>Then try again <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python3</span></code>.</p>
+</div>
+<div class="section" id="what-version-of-python-should-i-use-what-is-the-name-of-the-executable">
+<h2>What version of Python should I use? What is the name of the executable?<a class="headerlink" href="#what-version-of-python-should-i-use-what-is-the-name-of-the-executable" title="Permalink to this headline">¶</a></h2>
+<p>The Python version should be at least 3.6. You can check your version with
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">--version</span></code> on Linux or macOS, and with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> on Windows.
+Note: on Linux the program <code class="docutils literal notranslate"><span class="pre">python</span></code> might refer to an old Python version 2.
+Don’t ever use that!</p>
+</div>
+<div class="section" id="stuff-generally-doesn-t-seem-to-work-in-the-conda-prompt-on-windows">
+<h2>Stuff generally doesn’t seem to work in the conda prompt on Windows<a class="headerlink" href="#stuff-generally-doesn-t-seem-to-work-in-the-conda-prompt-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>Some environment variables apparently may not be properly set in the conda prompt directly after install. Try rebooting your system.</p>
+</div>
+<div class="section" id="tmc-test-fails-but-all-other-commands-including-submit-work">
+<h2>TMC test fails but all other commands (including submit) work<a class="headerlink" href="#tmc-test-fails-but-all-other-commands-including-submit-work" title="Permalink to this headline">¶</a></h2>
+<p>If you are using Windows and a fairly new installation of conda, you have fallen pray to a bug in
+conda. The python environment variables are not properly set for tmc to be able to run the tests.
+You can use <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">tmc</span></code> in the project root instead. So in the folder where e.g. <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">src/hello_world.py</span></code>
+works as expected the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">tmc</span></code> should run tmc tests properly.</p>
+<p>This workaround shouldn’t be needed after the next version of conda is released.</p>
+</div>
 <div class="section" id="when-logging-to-tmc-first-time-whats-the-server-address-it-asks">
 <h2>When logging to tmc first time, whats the server address it asks?<a class="headerlink" href="#when-logging-to-tmc-first-time-whats-the-server-address-it-asks" title="Permalink to this headline">¶</a></h2>
 <p>Your TMC client is old, load newest version from
@@ -154,18 +219,6 @@
 located in <code class="docutils literal notranslate"><span class="pre">&lt;user.home&gt;/.config/tmc-cli/logs</span></code>. There should be mention of <code class="docutils literal notranslate"><span class="pre">SSLHandshakeException</span></code>
 or similar security related exceptions. In this case you should update to a newer version of java.</p>
 <p>For java 8, at least open jdk 1.8.0_212 and 1.8.0.211 work. All java 11 and 12 version should work.</p>
-</div>
-<div class="section" id="tmc-test-fails-but-all-other-commands-including-submit-work">
-<h2>TMC test fails but all other commands (including submit) work<a class="headerlink" href="#tmc-test-fails-but-all-other-commands-including-submit-work" title="Permalink to this headline">¶</a></h2>
-<p>If you are using Windows and a fairly new installation of conda, you have fallen pray to a bug in
-conda. The python environment variables are not properly set for tmc to be able to run the tests.
-You can use <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">tmc</span></code> in the project root instead. So in the folder where e.g. <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">src/hello_world.py</span></code>
-works as expected the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">tmc</span></code> should run tmc tests properly.</p>
-<p>This workaround shouldn’t be needed after the next version of conda is released.</p>
-</div>
-<div class="section" id="stuff-generally-doesn-t-seem-to-work-in-the-conda-prompt-on-windows">
-<h2>Stuff generally doesn’t seem to work in the conda prompt on Windows<a class="headerlink" href="#stuff-generally-doesn-t-seem-to-work-in-the-conda-prompt-on-windows" title="Permalink to this headline">¶</a></h2>
-<p>Some environment variables apparently may not be properly set in the conda prompt directly after install. Try rebooting your system.</p>
 </div>
 <div class="section" id="tmc-not-found">
 <h2>tmc not found<a class="headerlink" href="#tmc-not-found" title="Permalink to this headline">¶</a></h2>
@@ -193,57 +246,12 @@ version of TMC with <code class="docutils literal notranslate"><span class="pre"
 activate Anaconda. To achieve this check the question:
 ModuleNotFoundError: No module named ‘somelibrary’</p>
 </div>
-<div class="section" id="what-version-of-python-should-i-use-what-is-the-name-of-the-executable">
-<h2>What version of Python should I use? What is the name of the executable?<a class="headerlink" href="#what-version-of-python-should-i-use-what-is-the-name-of-the-executable" title="Permalink to this headline">¶</a></h2>
-<p>The Python version should be at least 3.6. You can check your version with
-<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">--version</span></code> on Linux or macOS, and with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> on Windows.
-Note: on Linux the program <code class="docutils literal notranslate"><span class="pre">python</span></code> might refer to an old Python version 2.
-Don’t ever use that!</p>
-</div>
-<div class="section" id="how-to-load-a-file-that-resides-in-the-src-folder">
-<h2>How to load a file that resides in the src folder?<a class="headerlink" href="#how-to-load-a-file-that-resides-in-the-src-folder" title="Permalink to this headline">¶</a></h2>
-<p>TMC runs code from the project root. So for python to find <code class="docutils literal notranslate"><span class="pre">file.txt</span></code>, you need to pass it
-the folder as well. That is <code class="docutils literal notranslate"><span class="pre">src/file.txt</span></code>.</p>
-<p>However, if you are requested to write a function, say <code class="docutils literal notranslate"><span class="pre">f</span></code>, that gets a filename as a parameter,
-then setting the correct file path is the responsibility of the caller of <code class="docutils literal notranslate"><span class="pre">f</span></code>. If the filename comes from
-the command line parameters (<code class="docutils literal notranslate"><span class="pre">sys.argv</span></code>), then it is the responsibility of the person
-who runs the program to provide the correct path, like <code class="docutils literal notranslate"><span class="pre">src/file.txt</span></code>.</p>
-</div>
-<div class="section" id="tests-complain-about-missing-attribute-assert-called-assert-called-once">
-<h2>Tests complain about missing attribute assert_called, assert_called_once, …<a class="headerlink" href="#tests-complain-about-missing-attribute-assert-called-assert-called-once" title="Permalink to this headline">¶</a></h2>
-<p>These require at least Python version 3.6. Check your installation. See the next question.</p>
-</div>
-<div class="section" id="modulenotfounderror-no-module-named-somelibrary">
-<h2>ModuleNotFoundError: No module named ‘somelibrary’<a class="headerlink" href="#modulenotfounderror-no-module-named-somelibrary" title="Permalink to this headline">¶</a></h2>
-<p>The libraries needed in the course (numpy, pandas, matplotlib, scikit-learn, scipy, seaborn, and statsmodels)
-are contained in the Anaconda distribution. Either you haven’t installed Anaconda or
-it hasn’t been activated.</p>
-<p>On Windows it may help, if you use ‘Anaconda prompt’ from the Windows menu.
-That should activate Anaconda automatically.</p>
-<p>If you don’t want to use ‘Anaconda prompt’, then in command prompt
-try <code class="docutils literal notranslate"><span class="pre">where</span> <span class="pre">python</span></code> to see if it finds Python under
-Anaconda’s folder. If not, try to activate Anaconda with
-<code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\AppData\Local\Continuum\Anaconda3\Scripts\activate</span></code>
-Or something similar, depending where you installed it.</p>
-<p>On Linux/macOS:</p>
-<p>You can check whether Anaconda is active with the command <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python3</span></code>.
-If the python3 binary is under anaconda3 folder, then Anaconda is active.
-If you are sure you have already installed Anaconda, then
-you can activate it with</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code>, or</li>
-<li><code class="docutils literal notranslate"><span class="pre">~/acaconda3/bin/conda</span> <span class="pre">activate</span></code> (or where ever Anaconda is installed)</li>
-<li>On older Anaconda distributions use: <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/anaconda3/bin/activate</span></code></li>
-</ul>
-<p>Then try again <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python3</span></code>.</p>
-</div>
 <div class="section" id="i-cannot-understand-the-error-message-from-a-failed-test-case">
 <h2>I cannot understand the error message from a failed test case<a class="headerlink" href="#i-cannot-understand-the-error-message-from-a-failed-test-case" title="Permalink to this headline">¶</a></h2>
-<p>First run <code class="docutils literal notranslate"><span class="pre">tmc</span> <span class="pre">update</span></code> to make sure I haven’t already fixed that
-issue. If the problem persists, make a bug report in:</p>
+<p>First run <code class="docutils literal notranslate"><span class="pre">tmc</span> <span class="pre">update</span></code> to make sure the test hasn’t already been patched.
+If the problem persists, make a bug report in:</p>
 <ul class="simple">
 <li>Telegram: <a class="reference external" href="https://t.me/tkt_dap">https://t.me/tkt_dap</a></li>
-<li>Github <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/issues">issues</a></li>
 <li>Give feedback, when using <code class="docutils literal notranslate"><span class="pre">tmc</span> <span class="pre">submit</span></code></li>
 </ul>
 <p>Note that reporting that “tests should be better” doesn’t really help. Please try to be more specific with bug reports. You can for example consider the following:</p>
@@ -251,7 +259,7 @@ issue. If the problem persists, make a bug report in:</p>
 <li>What was the error message?</li>
 <li>What was the actual issue if you managed to fix it?</li>
 <li>Link to non-working code</li>
-<li>If reported via Github or Telegram: <strong>What was the exercise in question?</strong></li>
+<li>If reported via Telegram: <strong>What was the exercise in question?</strong></li>
 </ul>
 </div>
 </div>

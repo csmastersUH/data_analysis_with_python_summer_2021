@@ -1,6 +1,88 @@
 Frequently asked questions
 ==========================
 
+How to load a file that resides in the src folder?
+--------------------------------------------------
+
+TMC runs code from the project root. So for python to find ``file.txt``, you need to pass it
+the folder as well. That is ``src/file.txt``.
+
+However, if you are requested to write a function, say ``f``, that gets a filename as a parameter,
+then setting the correct file path is the responsibility of the caller of ``f``. If the filename comes from
+the command line parameters (``sys.argv``), then it is the responsibility of the person
+who runs the program to provide the correct path, like ``src/file.txt``.
+
+Tests complain about missing attribute assert_called, assert_called_once, ...
+-----------------------------------------------------------------------------
+
+These require at least Python version 3.6. Check your installation. See the next question.
+
+Problem when testing part01-e09
+-------------------------------
+
+This is likely due to the tests using the numpy library and the library not being available to the test program. 
+
+See the next topic.
+
+ModuleNotFoundError: No module named 'somelibrary'
+--------------------------------------------------
+
+The libraries needed in the course (numpy, pandas, matplotlib, scikit-learn, scipy, seaborn, and statsmodels)
+are contained in the Anaconda distribution. Either you haven't installed Anaconda or it hasn't been activated.
+
+If you are using VSCode, the best way is to start VSCode from the anaconda navigator. If this does not work for you, 
+try selecting a python interpreter that has the necessary libraries by accessing the "Python: Select interpreter" option 
+from the Command palette (CTRL + SHIFT + P), and selecting a python 3.6 or higher with conda or anaconda in the path.
+
+**For non-Anaconda and/or non-VSCode users:**
+
+On Windows it may help, if you use 'Anaconda prompt' from the Windows menu.
+That should activate Anaconda automatically.
+
+If you don't want to use 'Anaconda prompt', then in command prompt
+try ``where python`` to see if it finds Python under
+Anaconda's folder. If not, try to activate Anaconda with
+``C:\Users\<username>\AppData\Local\Continuum\Anaconda3\Scripts\activate``
+Or something similar, depending where you installed it.
+
+On Linux/macOS:
+
+You can check whether Anaconda is active with the command ``which python3``.
+If the python3 binary is under anaconda3 folder, then Anaconda is active.
+If you are sure you have already installed Anaconda, then
+you can activate it with
+
+* ``conda activate``, or
+
+* ``~/acaconda3/bin/conda activate`` (or where ever Anaconda is installed)
+
+* On older Anaconda distributions use: ``source ~/anaconda3/bin/activate``
+
+Then try again ``which python3``.
+
+What version of Python should I use? What is the name of the executable?
+------------------------------------------------------------------------
+
+The Python version should be at least 3.6. You can check your version with
+``python3 --version`` on Linux or macOS, and with ``python --version`` on Windows.
+Note: on Linux the program ``python`` might refer to an old Python version 2.
+Don't ever use that!
+
+Stuff generally doesn't seem to work in the conda prompt on Windows
+-------------------------------------------------------------------
+
+Some environment variables apparently may not be properly set in the conda prompt directly after install. Try rebooting your system.
+
+TMC test fails but all other commands (including submit) work
+-------------------------------------------------------------
+
+If you are using Windows and a fairly new installation of conda, you have fallen pray to a bug in
+conda. The python environment variables are not properly set for tmc to be able to run the tests.
+You can use ``python -m tmc`` in the project root instead. So in the folder where e.g. ``python src/hello_world.py``
+works as expected the command ``python -m tmc`` should run tmc tests properly.
+
+This workaround shouldn't be needed after the next version of conda is released.
+
 When logging to tmc first time, whats the server address it asks?
 -----------------------------------------------------------------
 
@@ -15,21 +97,6 @@ located in ``<user.home>/.config/tmc-cli/logs``. There should be mention of ``SS
 or similar security related exceptions. In this case you should update to a newer version of java.
 
 For java 8, at least open jdk 1.8.0_212 and 1.8.0.211 work. All java 11 and 12 version should work.
-
-TMC test fails but all other commands (including submit) work
--------------------------------------------------------------
-
-If you are using Windows and a fairly new installation of conda, you have fallen pray to a bug in
-conda. The python environment variables are not properly set for tmc to be able to run the tests.
-You can use ``python -m tmc`` in the project root instead. So in the folder where e.g. ``python src/hello_world.py``
-works as expected the command ``python -m tmc`` should run tmc tests properly.
-
-This workaround shouldn't be needed after the next version of conda is released.
-
-Stuff generally doesn't seem to work in the conda prompt on Windows
--------------------------------------------------------------------
-
-Some environment variables apparently may not be properly set in the conda prompt directly after install. Try rebooting your system.
 
 tmc not found
 -------------
@@ -62,71 +129,13 @@ version of TMC with ``tmc --version``. If it still does not work, then try to
 activate Anaconda. To achieve this check the question:
 ModuleNotFoundError: No module named ‘somelibrary’
 
-What version of Python should I use? What is the name of the executable?
-------------------------------------------------------------------------
-
-The Python version should be at least 3.6. You can check your version with
-``python3 --version`` on Linux or macOS, and with ``python --version`` on Windows.
-Note: on Linux the program ``python`` might refer to an old Python version 2.
-Don't ever use that!
-
-How to load a file that resides in the src folder?
---------------------------------------------------
-
-TMC runs code from the project root. So for python to find ``file.txt``, you need to pass it
-the folder as well. That is ``src/file.txt``.
-
-However, if you are requested to write a function, say ``f``, that gets a filename as a parameter,
-then setting the correct file path is the responsibility of the caller of ``f``. If the filename comes from
-the command line parameters (``sys.argv``), then it is the responsibility of the person
-who runs the program to provide the correct path, like ``src/file.txt``.
-
-Tests complain about missing attribute assert_called, assert_called_once, ...
------------------------------------------------------------------------------
-
-These require at least Python version 3.6. Check your installation. See the next question.
-
-ModuleNotFoundError: No module named 'somelibrary'
---------------------------------------------------
-
-The libraries needed in the course (numpy, pandas, matplotlib, scikit-learn, scipy, seaborn, and statsmodels)
-are contained in the Anaconda distribution. Either you haven't installed Anaconda or
-it hasn't been activated.
-
-On Windows it may help, if you use 'Anaconda prompt' from the Windows menu.
-That should activate Anaconda automatically.
-
-If you don't want to use 'Anaconda prompt', then in command prompt
-try ``where python`` to see if it finds Python under
-Anaconda's folder. If not, try to activate Anaconda with
-``C:\Users\<username>\AppData\Local\Continuum\Anaconda3\Scripts\activate``
-Or something similar, depending where you installed it.
-
-On Linux/macOS:
-
-You can check whether Anaconda is active with the command ``which python3``.
-If the python3 binary is under anaconda3 folder, then Anaconda is active.
-If you are sure you have already installed Anaconda, then
-you can activate it with
-
-* ``conda activate``, or
-
-* ``~/acaconda3/bin/conda activate`` (or where ever Anaconda is installed)
-
-* On older Anaconda distributions use: ``source ~/anaconda3/bin/activate``
-
-Then try again ``which python3``.
-
-
 I cannot understand the error message from a failed test case
 -------------------------------------------------------------
 
-First run ``tmc update`` to make sure I haven't already fixed that
-issue. If the problem persists, make a bug report in:
+First run ``tmc update`` to make sure the test hasn't already been patched. 
+If the problem persists, make a bug report in:
 
 * Telegram: `https://t.me/tkt_dap <https://t.me/tkt_dap>`__
-
-* Github `issues <https://github.com/csmastersUH/data_analysis_with_python_summer_2021/issues>`__
 
 * Give feedback, when using ``tmc submit``
 
@@ -138,4 +147,4 @@ Note that reporting that "tests should be better" doesn't really help. Please tr
 
 * Link to non-working code
 
-* If reported via Github or Telegram: **What was the exercise in question?**
+* If reported via Telegram: **What was the exercise in question?**
