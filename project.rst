@@ -7,7 +7,7 @@ Choose a project work. There are three projects to choose from:
 2. regression analysis on medical data (part08)
 3. fossil data analysis 
 
-The fossil data analysis project is currently not integrated to the TMC system, so for that, see the instructions from the tasks section of the `course page <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_.
+The fossil data analysis project is currently not integrated to the TMC system, so for that, see the instructions from the `course page <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_.
 
 For the two first projects (part07 and part08), download the exercises
 and/or notebooks from the TMC server.
@@ -23,7 +23,7 @@ of exercises are done in each project.
 
 Save the report as a Jupyter notebook file (with ``ipynb`` extension)
 and submit this file to Moodle. After this you will need to give feedback for your own
-report and two other reports. See the tasks section of the `course page <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_ for instructions on this peer-review process.  
+report and two other reports. See the `course page <https://courses.helsinki.fi/fi/aycsm90004en/135221588>`_ for instructions on this peer-review process.  
 
 Sequence analysis
 -----------------
@@ -56,7 +56,7 @@ Read the introduction ``introduction-to-regression-analysis.pdf`` from the `cour
 Write solutions to exercises directly into the cells of the given Jupyter notebook.
 Do not modify lines that say ``# exercise x``; without those the tests won't work.
 Don't use additional cells, and do in each cell exactly as the instructions say.
-Save the file and run ``tmc test``. The tests read and execute directly the cells
+Save the file and run test normally. The tests read and execute directly the cells
 of the notebook.
 Make sure the notebook includes you solutions and looks readable,
 and then submit the resulting notebook to Moodle.
@@ -68,25 +68,11 @@ If you want, you can run tests on the work you are reviewing, to help
 assess the correctness of the solutions. Note that there can be bugs in
 the tests too.
 
-.. warning:: Make sure you don't accidentally delete your own solutions, when
-	     testing other student's work. Don't do the tests where your own
-	     solutions are.
+.. warning:: Back up your own solutions to make sure you don't accidentally delete them when testing other student's work.
 
-Regression analysis
--------------------
+* Replace your ``.ipynb`` solutions with one downloaded from the peer review. 
 
-Go to a temporary working area (like ``/tmp`` on Unix) so you don't accidentally overwrite
-your own solutions. Run ``tmc download -a hy-data-analysis-with-python-summer-2021``
-to get the tests. Store student's notebook to file
-``part08-e01_regression/src/project_notebook_regression_analysis.ipynb``.
-Run the tests using ``tmc test part08-e01_regression``.
+* Make sure that the name is correct (``project_notebook_regression_analysis.ipynb`` or ``project_notebook_sequence_analysis.ipynb``).
 
-Sequence analysis
--------------------
-
-Go to a temporary working area (like ``/tmp`` on Unix) so you don't accidentally overwrite
-your own solutions. Run ``tmc download -a hy-data-analysis-with-python-summer-2021``
-to get the tests. Overwrite the student's notebook in ``part07-e01_sequence_analysis/src``.
-Run the tests using ``tmc test`` in the ``part07-e01_sequence_analysis`` folder.
-
+* Run tests normally.
 
