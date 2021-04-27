@@ -27,7 +27,7 @@ NAV_COMMENT = "<!--NAVIGATION-->\n"
 
 COLAB_LINK = """
 
-<a href="https://colab.research.google.com/github/csmastersUH/data_analysis_with_python_spring_2020/blob/master/{notebook_filename}"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory"></a>
+<a href="https://colab.research.google.com/github/csmastersUH/data_analysis_with_python_summer_2021/blob/master/{notebook_filename}"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory"></a>
 """
 
 def iter_notebooks():

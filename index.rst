@@ -50,7 +50,7 @@ before the course "Introduction to Data Science".
 Conduct of the course
 ----------------------
 
-Refer to the `official course page <https://courses.helsinki.fi/fi/aycsm90004en/129239201>`__.
+Refer to the `official course page <https://studies.helsinki.fi/courses/cur/hy-CUR-139313455/Open_uni_Data_Analysis_with_Python_Summer_2021>`__.
 
 Note that this course requires a lot of work! Depending on your background
 it can take something between 5 to 20 hours per week.
