@@ -17,6 +17,8 @@ Note that the TMC server is only used here for helping you
 to proceed with the project work. Your final project work
 returned to Moodle can include partial solutions.
 
+.. note:: If you are using VS Code you can run tests for the jupyter notebook by right clicking the file in the ``src/`` folder.
+
 The projects differ a lot in their workflow. See the below sections
 on individual projects to see in detail how solving, testing and reporting
 of exercises are done in each project.
