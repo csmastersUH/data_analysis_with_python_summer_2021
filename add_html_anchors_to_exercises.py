@@ -18,7 +18,7 @@ def process(filename):
     for d in divs:
         if len(d.contents) != 1:
             continue
-        m = re.match(r"\n*(Exercise \d+ \([\w ]+\))", d.contents[0].string)
+        m = re.match(r"\n*(Exercise \d+ \([\w ]+\))", d.contents[1].string)
         if m:
             exercise = m[1]
             a = soup.new_tag("a", id=exercise.replace(" ", "-"))
