@@ -1230,23 +1230,17 @@ Jones
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 13 (read series)</p>
-</div>
+<div class="admonition note"><a id="Exercise-13-(read-series)">Exercise 13 (read series)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">read_series</span></code> that reads input lines from the user and return a Series. Each line should contain first the index and then the corresponding value, separated by whitespace. The index and values are strings (in this case <code class="docutils literal notranslate"><span class="pre">dtype</span></code> is <code class="docutils literal notranslate"><span class="pre">object</span></code>). An empty line signals the end of Series. Malformed input should cause an exception. An input line is malformed, if it is non-empty and, when split at whitespace, does not result in two parts.</p>
 <p>Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 14 (operations on series)</p>
-</div>
+<div class="admonition note"><a id="Exercise-14-(operations-on-series)">Exercise 14 (operations on series)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">create_series</span></code> that gets two lists of numbers as parameters. Both lists should have length 3. The function should first create two Series, <code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code>. The first series should have values from the first parameter list and have corresponding indices <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. The second series should get its values from the second parameter list and have again the corresponding indices <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. The function should return the pair of these Series.</p>
 <p>Then, write a function <code class="docutils literal notranslate"><span class="pre">modify_series</span></code> that gets two Series as parameters. It should add to the first Series <code class="docutils literal notranslate"><span class="pre">s1</span></code> a new value with index <code class="docutils literal notranslate"><span class="pre">d</span></code>. The new value should be the same as the value in Series <code class="docutils literal notranslate"><span class="pre">s2</span></code> with index <code class="docutils literal notranslate"><span class="pre">b</span></code>. Then delete the element from <code class="docutils literal notranslate"><span class="pre">s2</span></code> that has index <code class="docutils literal notranslate"><span class="pre">b</span></code>. Now the first Series should have four values, while the second list has only two values. Adding a new element to a Series can be achieved by assignment, like with dictionaries. Deletion of an element from a Series
 can be done with the <code class="docutils literal notranslate"><span class="pre">del</span></code> statement.</p>
 <p>Test these functions from the main function. Try adding together the Series returned by the <code class="docutils literal notranslate"><span class="pre">modify_series</span></code> function. The operations on Series use the indices to keep the element-wise operations <em>aligned</em>. If for some index the operation could not be performed, the resulting value will be <code class="docutils literal notranslate"><span class="pre">NaN</span></code> (Not A Number).</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 15 (inverse series)</p>
-</div>
+<div class="admonition note"><a id="Exercise-15-(inverse-series)">Exercise 15 (inverse series)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">inverse_series</span></code> that get a Series as a parameter and returns a new series, whose indices and values have swapped roles. Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <p>What happens if some value appears multiple times in the original Series? What happens if you use this value to index the resulting Series?</p>
 <hr/><p>One may notice that there are similarities between Python’s dictionaries and Pandas’ Series, both can be thought to access values using keys. The difference is that Series requires that the indices have all the same type, and similarly, all the values have the same type. This restriction allows creation of fast data structures.</p>

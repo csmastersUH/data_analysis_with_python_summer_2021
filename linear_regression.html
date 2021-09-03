@@ -660,9 +660,7 @@ Intercept: -167.160466064
 </div>
 <p>Linear and squared are not enough to explain the data, but the linear regression manages to fit quite well a polynomial curve to the data points, when cubic variables are included!</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 10 (linear regression)</p>
-</div>
+<div class="admonition note"><a id="Exercise-10-(linear-regression)">Exercise 10 (linear regression)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Part 1.</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">fit_line</span></code> that gets one dimensional arrays <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> as parameters. The function should return the tuple <code class="docutils literal notranslate"><span class="pre">(slope,</span> <span class="pre">intercept)</span></code> of the fitted line. Write a main program that tests the <code class="docutils literal notranslate"><span class="pre">fit_line</span></code> function with some example arrays. The main function should produce output in the following form:</p>
@@ -673,9 +671,7 @@ Intercept: 1.16666666667
 <p>Part 2.</p>
 <p>Modify your <code class="docutils literal notranslate"><span class="pre">main</span></code> function to plot the fitted line using matplotlib, in addition to the textual output. Plot also the original data points.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 11 (mystery data)</p>
-</div>
+<div class="admonition note"><a id="Exercise-11-(mystery-data)">Exercise 11 (mystery data)</a></div>
 <p>Read the tab separated file <code class="docutils literal notranslate"><span class="pre">mystery_data.tsv</span></code>. Its first five columns define the features, and the last column is the response. Use scikit-learn’s <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> to fit this data. Implement function <code class="docutils literal notranslate"><span class="pre">mystery_data</span></code> that reads this file and learns and returns the regression coefficients for the five features. You don’t have to fit the intercept. The <code class="docutils literal notranslate"><span class="pre">main</span></code> method should print output in the following form:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Coefficient of X1 is ...
 Coefficient of X2 is ...
@@ -686,9 +682,7 @@ Coefficient of X5 is ...
 </div>
 <p>Which features you think are needed to explain the response Y?</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 12 (coefficient of determination)</p>
-</div>
+<div class="admonition note"><a id="Exercise-12-(coefficient-of-determination)">Exercise 12 (coefficient of determination)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Using the same data as in the previous exercise, instead of printing the regression coefficients, print the <em>coefficient of determination</em>. The coefficient of determination, denoted by R2, tells how well the linear regression fits the data. The maximum value of the coefficient of determination is 1. That means the best possible fit.</p>
 <p>Part 1.</p>
@@ -706,9 +700,7 @@ R2-score with feature(s) X5: ...
 </div>
 <p>How small can the R2-score be? Experiment both with fitting the intercept and without fitting the intercept.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 13 (cycling weather continues)</p>
-</div>
+<div class="admonition note"><a id="Exercise-13-(cycling-weather-continues)">Exercise 13 (cycling weather continues)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">cycling_weather_continues</span></code> that tries to explain with linear regression the variable of a cycling measuring station’s counts using the weather data from corresponding day. The function should take the name of a (cycling) measuring station as a parameter and return the regression coefficients and the score. In more detail:</p>
 <p>Read the weather data set from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. Read the cycling data set from folder <code class="docutils literal notranslate"><span class="pre">src</span></code> and restrict it to year 2017. Further, get the sums of cycling counts for each day. Merge the two datasets by the year, month, and day. Note that for the above you need only small additions to the solution of exercise <code class="docutils literal notranslate"><span class="pre">cycling_weather</span></code>. After this, use forward fill to fill the missing values.</p>
 <p>In the linear regression use as explanatory variables the following columns <code class="docutils literal notranslate"><span class="pre">'Precipitation</span> <span class="pre">amount</span> <span class="pre">(mm)'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Snow</span> <span class="pre">depth</span> <span class="pre">(cm)'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'Air</span> <span class="pre">temperature</span> <span class="pre">(degC)'</span></code>. Explain the variable (measuring station), whose name is given as a parameter to the function <code class="docutils literal notranslate"><span class="pre">cycling_weather_continues</span></code>. Fit also the intercept. The function should return a pair, whose first element is the regression coefficients and the second element is the score. Above, you may need to use the method <code class="docutils literal notranslate"><span class="pre">reset_index</span></code> (its

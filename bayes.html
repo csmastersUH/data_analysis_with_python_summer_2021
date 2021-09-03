@@ -934,14 +934,10 @@ as it is encrypted.
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 1 (blob classification)</p>
-</div>
+<div class="admonition note"><a id="Exercise-1-(blob-classification)">Exercise 1 (blob classification)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">blob_classification</span></code> that gets feature matrix X and label vector y as parameters. It should then return the accuracy score of the prediction. Do the prediction using <code class="docutils literal notranslate"><span class="pre">GaussianNB</span></code>, and use <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code> function from <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> to split the dataset in to two parts: one for training and one for testing. Give parameter <code class="docutils literal notranslate"><span class="pre">random_state=0</span></code> to the splitting function so that the result is deterministic. Use training set size of 75% of the whole data.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 2 (plant classification)</p>
-</div>
+<div class="admonition note"><a id="Exercise-2-(plant-classification)">Exercise 2 (plant classification)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">plant_classification</span></code> that does the following:</p>
 <ul>
 <li><p>loads the iris dataset using sklearn (<code class="docutils literal notranslate"><span class="pre">sklearn.datasets.load_iris</span></code>)</p></li>
@@ -952,9 +948,7 @@ as it is encrypted.
 <hr/></li>
 </ul>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 3 (word classification)</p>
-</div>
+<div class="admonition note"><a id="Exercise-3-(word-classification)">Exercise 3 (word classification)</a></div>
 <p>This exercise can give four points at maximum!</p>
 <p>In this exercise we create a model that tries to label previously unseen words to be either Finnish or English.</p>
 <p>Part 1.</p>
@@ -975,9 +969,7 @@ as it is encrypted.
 <p>The cv parameter of <code class="docutils literal notranslate"><span class="pre">cross_val_score</span></code> can be either an integer, which specifies the number of folds, or it can be a <em>cross-validation generator</em> that generates the (train set,test set) pairs. What happens if you pass the following cross-validation generator to <code class="docutils literal notranslate"><span class="pre">cross_val_score</span></code> as a parameter: <code class="docutils literal notranslate"><span class="pre">sklearn.model_selection.KFold(n_splits=5,</span> <span class="pre">shuffle=True,</span> <span class="pre">random_state=0)</span></code>.</p>
 <p>Why the difference?</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 4 (spam detection)</p>
-</div>
+<div class="admonition note"><a id="Exercise-4-(spam-detection)">Exercise 4 (spam detection)</a></div>
 <p>This exercise gives two points if solved correctly!</p>
 <p>In the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder there are two files: <code class="docutils literal notranslate"><span class="pre">ham.txt.gz</span></code> and <code class="docutils literal notranslate"><span class="pre">spam.txt.gz</span></code>. The files are preprocessed versions of the files from <a class="reference external" href="https://spamassassin.apache.org/old/publiccorpus/">https://spamassassin.apache.org/old/publiccorpus/</a>. There is one email per line. The file <code class="docutils literal notranslate"><span class="pre">ham.txt.gz</span></code> contains emails that are non-spam, and, conversely, emails in file <code class="docutils literal notranslate"><span class="pre">spam.txt</span></code> are spam. The email headers have been removed, except for the subject line, and non-ascii characters have been deleted.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">spam_detection</span></code> that does the following:</p>

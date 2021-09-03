@@ -969,9 +969,7 @@ Name: b, dtype: int64
 </div>
 <p>In the sense of information content the order of columns should not matter, but sometimes you want to specify a certain order to make the Frame more readable, or to make it obey some semantic meaning of column order.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 1 (cities)</p>
-</div>
+<div class="admonition note"><a id="Exercise-1-(cities)">Exercise 1 (cities)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">cities</span></code> that returns the following DataFrame of top Finnish cities by population:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                 Population Total area
 Helsinki         643272     715.48
@@ -982,9 +980,7 @@ Oulu             201810     3817.52
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 2 (powers of series)</p>
-</div>
+<div class="admonition note"><a id="Exercise-2-(powers-of-series)">Exercise 2 (powers of series)</a></div>
 <p>Make function <code class="docutils literal notranslate"><span class="pre">powers_of_series</span></code> that takes a Series and a positive integer <code class="docutils literal notranslate"><span class="pre">k</span></code> as parameters and returns a DataFrame. The resulting DataFrame should have the same index as the input Series. The first column of the dataFrame should be the input Series, the second column should contain the Series raised to power of two. The third column should contain the Series raised to the power of three, and so on until (and including) power of <code class="docutils literal notranslate"><span class="pre">k</span></code>. The columns should have indices from 1 to k.</p>
 <p>The values should be numbers, but the index can have any type. Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function. Example of usage:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s = pd.Series([1,2,3,4], index=list("abcd"))
@@ -1000,9 +996,7 @@ d  4  16  64
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 3 (municipal information)</p>
-</div>
+<div class="admonition note"><a id="Exercise-3-(municipal-information)">Exercise 3 (municipal information)</a></div>
 <p>In the <code class="docutils literal notranslate"><span class="pre">main</span></code> function load a data set of municipal information from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder (originally from <a class="reference external" href="https://pxnet2.stat.fi/PXWeb/pxweb/en/">Statistics Finland</a>). Use the function <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code>, and note that the separator is a tabulator.</p>
 <p>Print the shape of the DataFrame (number of rows and columns) and the column names in the following format:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Shape: r,c
@@ -1234,16 +1228,12 @@ Name: Wage, dtype: int64
 </div>
 <p>But there is a better way to achieve this, which we will see in the next section.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 4 (municipalities of finland)</p>
-</div>
+<div class="admonition note"><a id="Exercise-4-(municipalities-of-finland)">Exercise 4 (municipalities of finland)</a></div>
 <p>Load again the municipal information DataFrame. The rows of the DataFrame correspond to various geographical areas of Finland. The first row is about Finland as a whole, then rows from Akaa to Äänekoski are municipalities of Finland in alphabetical order. After that some larger regions are listed.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">municipalities_of_finland</span></code> that returns a DataFrame containing only rows about municipalities. Give an appropriate argument for <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> so that it interprets the column about region name as the (row) index. This way you can index the DataFrame with the names of the regions.</p>
 <p>Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 5 (swedish and foreigners)</p>
-</div>
+<div class="admonition note"><a id="Exercise-5-(swedish-and-foreigners)">Exercise 5 (swedish and foreigners)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">swedish_and_foreigners</span></code> that</p>
 <ul class="simple">
 <li><p>Reads the municipalities data set</p></li>
@@ -1254,9 +1244,7 @@ Name: Wage, dtype: int64
 <p>The function should return this final DataFrame.</p>
 <p>Do you see some kind of correlation between the columns about Swedish speaking and foreign people? Do you see correlation between the columns about the population and the proportion of Swedish speaking people in this subset?</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 6 (growing municipalities)</p>
-</div>
+<div class="admonition note"><a id="Exercise-6-(growing-municipalities)">Exercise 6 (growing municipalities)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">growing_municipalities</span></code> that gets subset of municipalities (a DataFrame) as a parameter and returns the proportion of municipalities with increasing population in that subset.</p>
 <p>Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function using some subset of the municipalities. Print the proportion as percentages using 1 decimal precision.</p>
 <p>Example output:</p>
@@ -1333,14 +1321,10 @@ Name: 1, dtype: object
 </div>
 <p>With <code class="docutils literal notranslate"><span class="pre">iloc</span></code> everything works like with NumPy arrays: indexing, slicing, fancy indexing, masking and their combinations. With <code class="docutils literal notranslate"><span class="pre">loc</span></code> it is the same but now the names in the explicit indices are used for specifying rows and columns. Make sure your understand why the above examples work as they do!</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 7 (subsetting with loc)</p>
-</div>
+<div class="admonition note"><a id="Exercise-7-(subsetting-with-loc)">Exercise 7 (subsetting with loc)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">subsetting_with_loc</span></code> that in one go takes the subset of municipalities from Akaa to Äänekoski and restricts it to columns: “Population”, “Share of Swedish-speakers of the population, %”, and “Share of foreign citizens of the population, %”. The function should return this content as a DataFrame. Use the attribute <code class="docutils literal notranslate"><span class="pre">loc</span></code>.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 8 (subsetting by positions)</p>
-</div>
+<div class="admonition note"><a id="Exercise-8-(subsetting-by-positions)">Exercise 8 (subsetting by positions)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">subsetting_by_positions</span></code> that does the following.</p>
 <p>Read the data set of the top forty singles from the beginning of the year 1964 from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. Return the top 10 entries and only the columns <code class="docutils literal notranslate"><span class="pre">Title</span></code> and <code class="docutils literal notranslate"><span class="pre">Artist</span></code>. Get these elements by their positions, that is, by using a single call to the <code class="docutils literal notranslate"><span class="pre">iloc</span></code> attribute. The function should return these as a DataFrame.</p>
 <hr/></div>
@@ -1497,27 +1481,21 @@ dtype: float64
 </div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 9 (snow depth)</p>
-</div>
+<div class="admonition note"><a id="Exercise-9-(snow-depth)">Exercise 9 (snow depth)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">snow_depth</span></code> that reads in the weather DataFrame from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder and returns the maximum amount of snow in the year 2017.</p>
 <p>Print the result in the <code class="docutils literal notranslate"><span class="pre">main</span></code> function in the following form:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Max snow depth: xx.x
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 10 (average temperature)</p>
-</div>
+<div class="admonition note"><a id="Exercise-10-(average-temperature)">Exercise 10 (average temperature)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">average_temperature</span></code> that reads the weather data set and returns the average temperature in July.</p>
 <p>Print the result in the <code class="docutils literal notranslate"><span class="pre">main</span></code> function in the following form:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Average temperature in July: xx.x
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 11 (below zero)</p>
-</div>
+<div class="admonition note"><a id="Exercise-11-(below-zero)">Exercise 11 (below zero)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">below_zero</span></code> that returns the number of days when the temperature was below zero.</p>
 <p>Print the result in the main function in the following form:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Number of days below zero: xx
@@ -2557,15 +2535,11 @@ dtype: object
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">interpolate</span></code> method, which we will not cover here, offers more elaborate ways to interpolate the missing values from their neighbouring non-missing values.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 12 (cyclists)</p>
-</div>
+<div class="admonition note"><a id="Exercise-12-(cyclists)">Exercise 12 (cyclists)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">cyclists</span></code> that does the following.</p>
 <p>Load the Helsinki bicycle data set from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder (<a class="reference external" href="https://hri.fi/data/dataset//helsingin-pyorailijamaarat">https://hri.fi/data/dataset//helsingin-pyorailijamaarat</a>). The dataset contains the number of cyclists passing by measuring points per hour. The data is gathered over about four years, and there are 20 measuring points around Helsinki. The dataset contains some empty rows at the end. Get rid of these. Also, get rid of columns that contain only missing values. Return the cleaned dataset.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 13 (missing value types)</p>
-</div>
+<div class="admonition note"><a id="Exercise-13-(missing-value-types)">Exercise 13 (missing value types)</a></div>
 <p>Make function <code class="docutils literal notranslate"><span class="pre">missing_value_types</span></code> that returns the following DataFrame. Use the <code class="docutils literal notranslate"><span class="pre">State</span></code> column as the (row) index. The value types for the two other columns should be <code class="docutils literal notranslate"><span class="pre">float</span></code> and <code class="docutils literal notranslate"><span class="pre">object</span></code>, respectively. Replace the dashes with the appropriate missing value symbols.</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2619,16 +2593,12 @@ dtype: object
 </tbody>
 </table>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 14 (special missing values)</p>
-</div>
+<div class="admonition note"><a id="Exercise-14-(special-missing-values)">Exercise 14 (special missing values)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">special_missing_values</span></code> that does the following.</p>
 <p>Read the data set of the top forty singles from the beginning of the year 1964 from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. Return the rows whose singles’ position dropped compared to last week’s position (column LW=Last Week).</p>
 <p>To do this you first have to convert the special values “New” and “Re” (Re-entry) to missing values (<code class="docutils literal notranslate"><span class="pre">None</span></code>).</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 15 (last week)</p>
-</div>
+<div class="admonition note"><a id="Exercise-15-(last-week)">Exercise 15 (last week)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">last_week</span></code> that reads the top40 data set mentioned in the above exercise. The function should then try to reconstruct the top40 list of the previous week based on that week’s list. Try to do this as well as possible. You can fill the values that are impossible to reconstruct by missing value symbols. Your solution should work for a top40 list of any week. So don’t rely on specific features of this top40 list. The column <code class="docutils literal notranslate"><span class="pre">WoC</span></code> means “Weeks on Chart”, that is, on how many weeks
 this song has been on the top 40 list.</p>
@@ -2976,9 +2946,7 @@ dtype: object
 </div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 16 (split date)</p>
-</div>
+<div class="admonition note"><a id="Exercise-16-(split-date)">Exercise 16 (split date)</a></div>
 <p>Read again the bicycle data set from <code class="docutils literal notranslate"><span class="pre">src</span></code> folder, and clean it as in the earlier exercise. Then split the <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column into a DataFrame with five columns with column names <code class="docutils literal notranslate"><span class="pre">Weekday</span></code>, <code class="docutils literal notranslate"><span class="pre">Day</span></code>, <code class="docutils literal notranslate"><span class="pre">Month</span></code>, <code class="docutils literal notranslate"><span class="pre">Year</span></code>, and <code class="docutils literal notranslate"><span class="pre">Hour</span></code>. Note that you also need to to do some conversions. To get Hours, drop the colon and minutes. Convert field <code class="docutils literal notranslate"><span class="pre">Weekday</span></code> according the following rule:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ma -&gt; Mon
 ti -&gt; Tue
@@ -3007,9 +2975,7 @@ joulu 12
 <p>Create function <code class="docutils literal notranslate"><span class="pre">split_date</span></code> that does the above and returns a DataFrame with five columns. You may want to use the <code class="docutils literal notranslate"><span class="pre">map</span></code> method of Series objects.</p>
 <p>So the first element in the <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column of the original data set should be converted from <code class="docutils literal notranslate"><span class="pre">ke</span> <span class="pre">1</span> <span class="pre">tammi</span> <span class="pre">2014</span> <span class="pre">00:00</span></code> to <code class="docutils literal notranslate"><span class="pre">Wed</span> <span class="pre">1</span> <span class="pre">1</span> <span class="pre">2014</span> <span class="pre">0</span></code> . Test your solution from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 17 (cleaning data)</p>
-</div>
+<div class="admonition note"><a id="Exercise-17-(cleaning-data)">Exercise 17 (cleaning data)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>The entries in the following table of US presidents are not uniformly formatted. Make function <code class="docutils literal notranslate"><span class="pre">cleaning_data</span></code> that reads the table from the tsv file <code class="docutils literal notranslate"><span class="pre">src/presidents.tsv</span></code> and returns the cleaned version of it. Note, you must do the edits programmatically using the string edit methods, not by creating a new DataFrame by hand. The columns should have <code class="docutils literal notranslate"><span class="pre">dtype</span></code>s <code class="docutils literal notranslate"><span class="pre">object</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">object</span></code>. The <code class="docutils literal notranslate"><span class="pre">where</span></code> method of DataFrames can be helpful, likewise the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/text.html#string-methods">string
 methods</a> of Series objects. You get an additional point, if you manage to get the columns President and Vice-president right!</p>

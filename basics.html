@@ -604,16 +604,12 @@ Bye!
 <p>Indentation applies to other compound statements as well, such as bodies of functions, different branches of an if statement, and while loops. We shall see examples of these later.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">range(3)</span></code> expression above actually results with the sequence of integers 0, 1, and 2. So, the range is a half-open interval with the end point excluded from the range. In general, expression range(n) gives integers 0, 1, 2, …, n-1. Modify the above program to make it also print the value of variable i at each iteration. Rerun the code with control-enter.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 1 (hello world)</p>
-</div>
+<div class="admonition note"><a id="Exercise-1-(hello-world)">Exercise 1 (hello world)</a></div>
 <p>Fill in the missing piece in the solution stub file <code class="docutils literal notranslate"><span class="pre">hello_world.py</span></code> in folder <code class="docutils literal notranslate"><span class="pre">src</span></code> to make it print the following:</p>
 <p><code class="docutils literal notranslate"><span class="pre">Hello,</span> <span class="pre">world!</span></code></p>
 <p>Make sure you use correct indenting. You can run it with command <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">src/hello_world.py</span></code>. If the output looks good, then you can test it with command <code class="docutils literal notranslate"><span class="pre">tmc</span> <span class="pre">test</span></code>. If the tests pass, submit your solution to the server with command <code class="docutils literal notranslate"><span class="pre">tmc</span> <span class="pre">submit</span></code>.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 2 (compliment)</p>
-</div>
+<div class="admonition note"><a id="Exercise-2-(compliment)">Exercise 2 (compliment)</a></div>
 <p>Fill in the stub solution to make the program work as follows. The program should ask the user for an input, and the print an answer as the examples below show.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>What country are you from? Sweden
 I have heard that Sweden is a beautiful country.
@@ -623,9 +619,7 @@ I have heard that Chile is a beautiful country.
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 3 (multiplication)</p>
-</div>
+<div class="admonition note"><a id="Exercise-3-(multiplication)">Exercise 3 (multiplication)</a></div>
 <p>Make a program that gives the following output. You should use a for loop in your solution.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>4 multiplied by 0 is 0
 4 multiplied by 1 is 4
@@ -1074,9 +1068,7 @@ The sum is 45
 there are other iterables. We will talk about iterables and generators later this week.</p>
 <p>When one wants to iterate through all the elements in an iterable, then the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is a natural choice. But sometimes <code class="docutils literal notranslate"><span class="pre">while</span></code> loops offer cleaner solution. For instance, if we want to go through all Fibonacci numbers up till a given limit, then it is easier to do with a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 4 (multiplication table)</p>
-</div>
+<div class="admonition note"><a id="Exercise-4-(multiplication-table)">Exercise 4 (multiplication table)</a></div>
 <p>In the <code class="docutils literal notranslate"><span class="pre">main</span></code> function print a multiplication table, which is shown below:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 1   2   3   4   5   6   7   8   9  10
  2   4   6   8  10  12  14  16  18  20
@@ -1239,9 +1231,7 @@ Natural logarithm of 56 is 4.0254
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 5 (two dice)</p>
-</div>
+<div class="admonition note"><a id="Exercise-5-(two-dice)">Exercise 5 (two dice)</a></div>
 <p>Let us consider throwing two dice. (A dice can give a value between 1 and 6.) Use two nested <code class="docutils literal notranslate"><span class="pre">for</span></code> loops in the <code class="docutils literal notranslate"><span class="pre">main</span></code> function to iterate through all possible combinations the pair of dice can give. There are 36 possible combinations. Print all those combinations as (ordered) pairs that sum to 5. For example, your printout should include the pair <code class="docutils literal notranslate"><span class="pre">(2,3)</span></code>. Print one pair per line.</p>
 <hr/></div>
 </div>
@@ -1570,9 +1560,7 @@ First: 5 Second: 8 Third: 7
 </div>
 <p>Try first running the above cell and see the result. Then uncomment the nonlocal stamement and run the cell again. The <code class="docutils literal notranslate"><span class="pre">global</span></code> and <code class="docutils literal notranslate"><span class="pre">nonlocal</span></code> statements are similar. The first will force a variable refer to a global variable, and the second will force a variable to refer to the variable in the nearest outer scope (but not the global scope).</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 6 (triple square)</p>
-</div>
+<div class="admonition note"><a id="Exercise-6-(triple-square)">Exercise 6 (triple square)</a></div>
 <p>Write two functions: <code class="docutils literal notranslate"><span class="pre">triple</span></code> and <code class="docutils literal notranslate"><span class="pre">square</span></code>. Function <code class="docutils literal notranslate"><span class="pre">triple</span></code> multiplies its parameter by three. Function <code class="docutils literal notranslate"><span class="pre">square</span></code> raises its parameter to the power of two. For example, we have equalities <code class="docutils literal notranslate"><span class="pre">triple(5)==15</span></code> and <code class="docutils literal notranslate"><span class="pre">square(5)==25</span></code>.</p>
 <p>Part 1.</p>
 <p>In the <code class="docutils literal notranslate"><span class="pre">main</span></code> function write a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop that iterates through values 1 to 10, and for each value prints its triple and its square. The output should be as follows:</p>
@@ -1585,9 +1573,7 @@ triple(2)==6 square(2)==4
 <p>Now modify this <code class="docutils literal notranslate"><span class="pre">for</span></code> loop so that it stops iteration when the square of a value is larger than the triple of the value, without printing anything in the last iteration.</p>
 <p>Note that the test cases check that both functions <code class="docutils literal notranslate"><span class="pre">triple</span></code> and <code class="docutils literal notranslate"><span class="pre">square</span></code> are called exactly once per iteration.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 7 (areas of shapes)</p>
-</div>
+<div class="admonition note"><a id="Exercise-7-(areas-of-shapes)">Exercise 7 (areas of shapes)</a></div>
 <p>Create a program that can compute the areas of three shapes, triangles, rectangles and circles, when their dimensions are given.</p>
 <p>An endless loop should ask for which shape you want the area be calculated. An empty string as input will exit the loop. If the user gives a string that is none of the given shapes, the message “Unknown shape!” should be printed. Then it will ask for dimensions for that particular shape. When all the necessary dimensions are given, it prints the area, and starts the loop all over again. Use format specifier <code class="docutils literal notranslate"><span class="pre">f</span></code> for the area.</p>
 <p>What happens if you give incorrect dimensions, like giving string “aa” as radius? You don’t have to check for errors in the input.</p>
@@ -1698,9 +1684,7 @@ Choose a shape (triangle, rectangle, circle):
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 8 (solve quadratic)</p>
-</div>
+<div class="admonition note"><a id="Exercise-8-(solve-quadratic)">Exercise 8 (solve quadratic)</a></div>
 <p>In mathematics, the quadratic equation <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span> can be solved with the formula <span class="math notranslate nohighlight">\(x=\frac{-b\pm \sqrt{b^2 -4ac}}{2a}\)</span>.</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">solve_quadratic</span></code>, that returns both solutions of a generic quadratic as a pair (2-tuple) when the coefficients are given as parameters. It should work like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">solve_quadratic</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
@@ -1872,16 +1856,12 @@ range(0, 3)
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 9 (merge)</p>
-</div>
+<div class="admonition note"><a id="Exercise-9-(merge)">Exercise 9 (merge)</a></div>
 <p>Suppose we have two lists <code class="docutils literal notranslate"><span class="pre">L1</span></code> and <code class="docutils literal notranslate"><span class="pre">L2</span></code> that contain integers which are sorted in ascending order. Create a function <code class="docutils literal notranslate"><span class="pre">merge</span></code> that gets these lists as parameters and returns a new sorted list <code class="docutils literal notranslate"><span class="pre">L</span></code> that has all the elements of <code class="docutils literal notranslate"><span class="pre">L1</span></code> and <code class="docutils literal notranslate"><span class="pre">L2</span></code>. So, <code class="docutils literal notranslate"><span class="pre">len(L)</span></code> should equal to <code class="docutils literal notranslate"><span class="pre">len(L1)+len(L2)</span></code>. Do this using the fact that both lists are already sorted. You can’t use the <code class="docutils literal notranslate"><span class="pre">sorted</span></code> function or the <code class="docutils literal notranslate"><span class="pre">sort</span></code> method in implementing the <code class="docutils literal notranslate"><span class="pre">merge</span></code> method. You can however use these <code class="docutils literal notranslate"><span class="pre">sorted</span></code> in
 the main function for creating inputs to the <code class="docutils literal notranslate"><span class="pre">merge</span></code> function. Test with a couple of examples in the <code class="docutils literal notranslate"><span class="pre">main</span></code> function that your solution works correctly.</p>
 <p>Note: In Python argument lists are passed by reference to the function, they are not copied! Make sure you don’t modify the original lists of the caller.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 10 (detect ranges)</p>
-</div>
+<div class="admonition note"><a id="Exercise-10-(detect-ranges)">Exercise 10 (detect ranges)</a></div>
 <p>Create a function named <code class="docutils literal notranslate"><span class="pre">detect_ranges</span></code> that gets a list of integers as a parameter. The function should then sort this list, and transform the list into another list where pairs are used for all the detected intervals. So <code class="docutils literal notranslate"><span class="pre">3,4,5,6</span></code> is replaced by the pair <code class="docutils literal notranslate"><span class="pre">(3,7)</span></code>. Numbers that are not part of any interval result just single numbers. The resulting list consists of these numbers and pairs, separated by commas. An example of how this function works:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">detect_ranges</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">13</span><span class="p">]))</span>
 <span class="p">[</span><span class="mi">2</span><span class="p">,(</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span><span class="mi">10</span><span class="p">,(</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">)]</span>
@@ -1947,9 +1927,7 @@ On Sunday it was sunny and the temperature was 11 degrees celsius.
 </div>
 <p>If the sequences are not of equal length, then the resulting sequence will be as long as the shortest input sequence is.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 11 (interleave)</p>
-</div>
+<div class="admonition note"><a id="Exercise-11-(interleave)">Exercise 11 (interleave)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">interleave</span></code> that gets arbitrary number of lists as parameters. You may assume that all the lists have equal length. The function should return one list containing all the elements from the input lists interleaved. Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function of the program.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">interleave([1,2,3],</span> <span class="pre">[20,30,40],</span> <span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c'])</span></code> should return <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">20,</span> <span class="pre">'a',</span> <span class="pre">2,</span> <span class="pre">30,</span> <span class="pre">'b',</span> <span class="pre">3,</span> <span class="pre">40,</span> <span class="pre">'c']</span></code>. Use the <code class="docutils literal notranslate"><span class="pre">zip</span></code> function to implement <code class="docutils literal notranslate"><span class="pre">interleave</span></code>. Remember the <code class="docutils literal notranslate"><span class="pre">extend</span></code> method of list objects.</p>
 <hr/></div>
@@ -2187,9 +2165,7 @@ s.remove(x)
 </div>
 <p>And the set operators <code class="docutils literal notranslate"><span class="pre">|</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, and <code class="docutils literal notranslate"><span class="pre">^</span></code> have the corresponding mutating, augmented assignment forms: <code class="docutils literal notranslate"><span class="pre">|=</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;=</span></code>, <code class="docutils literal notranslate"><span class="pre">-=</span></code>, and <code class="docutils literal notranslate"><span class="pre">^=</span></code>.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 12 (distinct characters)</p>
-</div>
+<div class="admonition note"><a id="Exercise-12-(distinct-characters)">Exercise 12 (distinct characters)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">distinct_characters</span></code> that gets a list of strings as a parameter. It should return a dictionary whose keys are the strings of the input list and the corresponding values are the numbers of distinct characters in the key.</p>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">set</span></code> container to temporarily store the distinct characters in a string. Example of usage: <code class="docutils literal notranslate"><span class="pre">distinct_characters(["check",</span> <span class="pre">"look",</span> <span class="pre">"try",</span> <span class="pre">"pop"])</span></code> should return <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">"check"</span> <span class="pre">:</span> <span class="pre">4,</span> <span class="pre">"look"</span> <span class="pre">:</span> <span class="pre">3,</span> <span class="pre">"try"</span> <span class="pre">:</span> <span class="pre">3,</span> <span class="pre">"pop"</span> <span class="pre">:</span> <span class="pre">2}</span></code>.</p>
 <hr/></div>
@@ -2319,9 +2295,7 @@ For key 'b' value 3 was stored
 </div>
 <p>In similar fashion <code class="docutils literal notranslate"><span class="pre">del</span></code> can be used to delete a slice. Later we will see that <code class="docutils literal notranslate"><span class="pre">del</span></code> can delete attributes from an object.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 13 (reverse dictionary)</p>
-</div>
+<div class="admonition note"><a id="Exercise-13-(reverse-dictionary)">Exercise 13 (reverse dictionary)</a></div>
 <p>Let <code class="docutils literal notranslate"><span class="pre">d</span></code> be a dictionary that has English words as keys and a list of Finnish words as values. So, the dictionary can be used to find out the Finnish equivalents of an English word in the following way:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>d["move"]
 ["liikuttaa"]
@@ -2337,9 +2311,7 @@ reverse_dictionary(d)
 </div>
 <p>Be careful with synonyms and homonyms!</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 14 (find matching)</p>
-</div>
+<div class="admonition note"><a id="Exercise-14-(find-matching)">Exercise 14 (find matching)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">find_matching</span></code> that gets a list of strings and a search string as parameters. The function should return the indices to those elements in the input list that contain the search string. Use the function <code class="docutils literal notranslate"><span class="pre">enumerate</span></code>.</p>
 <p>An example: <code class="docutils literal notranslate"><span class="pre">find_matching(["sensitive",</span> <span class="pre">"engine",</span> <span class="pre">"rubbish",</span> <span class="pre">"comment"],</span> <span class="pre">"en")</span></code> should return the list <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">3]</span></code>.</p>
 <hr/></div>
@@ -2481,9 +2453,7 @@ reverse_dictionary(d)
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 15 (two dice comprehension)</p>
-</div>
+<div class="admonition note"><a id="Exercise-15-(two-dice-comprehension)">Exercise 15 (two dice comprehension)</a></div>
 <p>Redo the earlier exercise which printed all the pairs of two dice results that sum to 5. But this time use a list comprehension. Print one pair per line.</p>
 <hr/></div>
 <div class="section" id="Processing-sequences">
@@ -2591,9 +2561,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 16 (transform)</p>
-</div>
+<div class="admonition note"><a id="Exercise-16-(transform)">Exercise 16 (transform)</a></div>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">transform</span></code> that gets two strings as parameters and returns a list of integers. The function should split the strings into words, and convert these words to integers. This should give two lists of integers. Then the function should return a list whose elements are multiplication of two integers in the respective positions in the lists. For example <code class="docutils literal notranslate"><span class="pre">transform("1</span> <span class="pre">5</span> <span class="pre">3",</span> <span class="pre">"2</span> <span class="pre">6</span> <span class="pre">-1")</span></code> should return the list of integers <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">30,</span> <span class="pre">-3]</span></code>.</p>
 <p>You <strong>have</strong> to use <code class="docutils literal notranslate"><span class="pre">split</span></code>, <code class="docutils literal notranslate"><span class="pre">map</span></code>, and <code class="docutils literal notranslate"><span class="pre">zip</span></code> functions/methods. You may assume that the two input strings are in correct format.</p>
 <hr/></div>
@@ -2643,9 +2611,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 <p>That said, <code class="docutils literal notranslate"><span class="pre">filter</span></code> is a useful function to know.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 17 (positive list)</p>
-</div>
+<div class="admonition note"><a id="Exercise-17-(positive-list)">Exercise 17 (positive list)</a></div>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">positive_list</span></code> that gets a list of numbers as a parameter, and returns a list with the negative numbers and zero filtered out using the <code class="docutils literal notranslate"><span class="pre">filter</span></code> function.</p>
 <p>The function call <code class="docutils literal notranslate"><span class="pre">positive_list([2,-2,0,1,-7])</span></code> should return the list <code class="docutils literal notranslate"><span class="pre">[2,1]</span></code>. Test your function in the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <hr/></div>
@@ -2917,9 +2883,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 <p>If no parameters are given to the <code class="docutils literal notranslate"><span class="pre">split</span></code> method, then it splits at any sequence of white space.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 18 (acronyms)</p>
-</div>
+<div class="admonition note"><a id="Exercise-18-(acronyms)">Exercise 18 (acronyms)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">acronyms</span></code> which takes a string as a parameter and returns a list of acronyms. A word is an acronym if it has length at least two, and all its characters are in uppercase. Before acronym detection, delete punctuation with the <code class="docutils literal notranslate"><span class="pre">strip</span></code> method.</p>
 <p>Test this function in the <code class="docutils literal notranslate"><span class="pre">main</span></code> function with the following call:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">acronyms</span><span class="p">(</span><span class="s2">"""For the purposes of the EU General Data Protection Regulation (GDPR), the controller of your personal information is International Business Machines Corporation (IBM Corp.), 1 New Orchard Road, Armonk, New York, United States, unless indicated otherwise. Where IBM Corp. or a subsidiary it controls (not established in the European Economic Area (EEA)) is required to appoint a legal representative in the EEA, the representative for all such cases is IBM United Kingdom Limited, PO Box 41, North Harbour, Portsmouth, Hampshire, United Kingdom PO6 3AU."""</span><span class="p">))</span>
@@ -2927,9 +2891,7 @@ the function. Let’s replace the above <code class="docutils literal notranslat
 </div>
 <p>This should return <code class="docutils literal notranslate"><span class="pre">['EU',</span> <span class="pre">'GDPR',</span> <span class="pre">'IBM',</span> <span class="pre">'IBM',</span> <span class="pre">'EEA',</span> <span class="pre">'EEA',</span> <span class="pre">'IBM',</span> <span class="pre">'PO',</span> <span class="pre">'PO6',</span> <span class="pre">'3AU']</span></code></p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 19 (sum equation)</p>
-</div>
+<div class="admonition note"><a id="Exercise-19-(sum-equation)">Exercise 19 (sum equation)</a></div>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">sum_equation</span></code> which takes a list of positive integers as parameters and returns a string with an equation of the sum of the elements.</p>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">sum_equation([1,5,7])</span></code> returns <code class="docutils literal notranslate"><span class="pre">"1</span> <span class="pre">+</span> <span class="pre">5</span> <span class="pre">+</span> <span class="pre">7</span> <span class="pre">=</span> <span class="pre">13"</span></code> Observe, the spaces should be exactly as shown above. For an empty list the function should return the string “0 = 0”.</p>
 <hr/></div>
@@ -3054,9 +3016,7 @@ attribute <code class="docutils literal notranslate"><span class="pre">__file__<
 </pre></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 20 (usemodule)</p>
-</div>
+<div class="admonition note"><a id="Exercise-20-(usemodule)">Exercise 20 (usemodule)</a></div>
 <p>Create your own module as file <code class="docutils literal notranslate"><span class="pre">triangle.py</span></code> in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. The module should contain two functions:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">hypothenuse</span></code> which returns the length of the hypothenuse when given the lengths of two other sides of a right-angled triangle</p></li>

@@ -782,14 +782,10 @@ Accuracy score is 0.793544796884
 </div>
 <p>This is quite a good result for such a simple algorithm!</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 5 (plant clustering)</p>
-</div>
+<div class="admonition note"><a id="Exercise-5-(plant-clustering)">Exercise 5 (plant clustering)</a></div>
 <p>Using the same iris data set that you saw earlier in the classification, apply k-means clustering with 3 clusters. Create a function <code class="docutils literal notranslate"><span class="pre">plant_clustering</span></code> that loads the iris data set, clusters the data and returns the accuracy_score.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 6 (nonconvex clusters)</p>
-</div>
+<div class="admonition note"><a id="Exercise-6-(nonconvex-clusters)">Exercise 6 (nonconvex clusters)</a></div>
 <p>This exercise can give four points at maximum!</p>
 <p>Read the tab separated file data.tsv from the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder into a DataFrame. The dataset has two features X1 and X2, and the label y. Cluster the feature matrix using DBSCAN with different values for the eps parameter. Use values in <code class="docutils literal notranslate"><span class="pre">np.arange(0.05,</span> <span class="pre">0.2,</span> <span class="pre">0.05)</span></code> for clustering. For each clustering, collect the accuracy score, the number of clusters, and the number of outliers. Return these values in a DataFrame, where columns and column names are as in the below example.</p>
 <p>Note that DBSCAN uses label -1 to denote outliers , that is, those data points that didn’t fit well in any cluster. You have to modify the find_permutation function to handle this: ignore the outlier data points from the accuracy score computation. In addition, if the number of clusters is not the same as the number of labels in the original data, set the accuracy score to NaN.</p>
@@ -848,9 +844,7 @@ Accuracy score is 0.793544796884
 </div>
 <p>With sharp eye and good will one can discern three clusters in the above heatmap and dendrogram.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 7 (binding sites)</p>
-</div>
+<div class="admonition note"><a id="Exercise-7-(binding-sites)">Exercise 7 (binding sites)</a></div>
 <p>This exercise can give three points at maximum!</p>
 <p>A binding site is a piece of DNA where a certain protein prefers to bind. The piece of DNA can be described as a string consisting of letters A, C, G, and T, which correspond to nucleotides Adenine, Cytosine, Guanine, and Thymine. In this exercise the length of binding sites is eight nucleotides. They are stored in the file <code class="docutils literal notranslate"><span class="pre">data.seq</span></code>, and the binding sites there are classified into two classes.</p>
 <p>Part 1. Write function <code class="docutils literal notranslate"><span class="pre">toint</span></code> that converts a nucleotide to an integer. Use the following mapping:</p>

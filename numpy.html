@@ -1170,9 +1170,7 @@ dcol has dim 2, shape (4, 1), size 4, and dtype int64:
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 11 (rows and columns)</p>
-</div>
+<div class="admonition note"><a id="Exercise-11-(rows-and-columns)">Exercise 11 (rows and columns)</a></div>
 <p>Write two functions, <code class="docutils literal notranslate"><span class="pre">get_rows</span></code> and <code class="docutils literal notranslate"><span class="pre">get_columns</span></code>, that get a two dimensional array as parameter. They should return the list of rows and columns of the array, respectively. The rows and columns should be one dimensional arrays. You may use the <em>transpose</em> operation, which flips rows to columns, in your solution. The transpose is done by the <code class="docutils literal notranslate"><span class="pre">T</span></code> method:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
@@ -1444,9 +1442,7 @@ part 3:
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 12 (row and column vectors)</p>
-</div>
+<div class="admonition note"><a id="Exercise-12-(row-and-column-vectors)">Exercise 12 (row and column vectors)</a></div>
 <p>Create function <code class="docutils literal notranslate"><span class="pre">get_row_vectors</span></code> that returns a list of rows from the input array of shape <code class="docutils literal notranslate"><span class="pre">(n,m)</span></code>, but this time the rows must have shape <code class="docutils literal notranslate"><span class="pre">(1,m)</span></code>. Similarly, create function <code class="docutils literal notranslate"><span class="pre">get_columns_vectors</span></code> that returns a list of columns (each having shape <code class="docutils literal notranslate"><span class="pre">(n,1)</span></code>) of the input matrix .</p>
 <p>Example: for a 2x3 input matrix</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[[5 0 3]
@@ -1467,9 +1463,7 @@ Column vectors:
 </div>
 <p>The above output is basically just the returned lists printed with <code class="docutils literal notranslate"><span class="pre">print</span></code>. Only some whitespace is adjusted to make it look nicer. Output is not tested.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 13 (diamond)</p>
-</div>
+<div class="admonition note"><a id="Exercise-13-(diamond)">Exercise 13 (diamond)</a></div>
 <p>Create a function <code class="docutils literal notranslate"><span class="pre">diamond</span></code> that returns a two dimensional integer array where the <code class="docutils literal notranslate"><span class="pre">1</span></code>s form a diamond shape. Rest of the numbers are <code class="docutils literal notranslate"><span class="pre">0</span></code>. The function should get a parameter that tells the length of a side of the diamond. Do this using the <code class="docutils literal notranslate"><span class="pre">eye</span></code> and <code class="docutils literal notranslate"><span class="pre">concatenate</span></code> functions of NumPy and array slicing.</p>
 <p>Example of usage:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(diamond(3))
@@ -1772,15 +1766,11 @@ Row sums: [25 19 15]
 </div>
 <p>The speed of NumPy is partly due to the fact that its arrays must have same type for all the elements. This requirement allows some efficient optimizations.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 14 (vector lengths)</p>
-</div>
+<div class="admonition note"><a id="Exercise-14-(vector-lengths)">Exercise 14 (vector lengths)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">vector_lengths</span></code> that gets a two dimensional array of shape (n,m) as a parameter. Each row in this array corresponds to a vector. The function should return an array of shape (n,), that has the length of each vector in the input. The length is defined by the usual <a class="reference external" href="https://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm">Euclidean norm</a>. Don’t use loops at all in your solution. Instead use vectorized operations. You must use at least the <code class="docutils literal notranslate"><span class="pre">np.sum</span></code> and the <code class="docutils literal notranslate"><span class="pre">np.sqrt</span></code>
 functions. You can’t use the function <code class="docutils literal notranslate"><span class="pre">scipy.linalg.norm</span></code>. Test your function in the main function.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 15 (vector angles)</p>
-</div>
+<div class="admonition note"><a id="Exercise-15-(vector-angles)">Exercise 15 (vector angles)</a></div>
 <p>Let x and y be m-dimensional vectors. The angle <span class="math notranslate nohighlight">\(\alpha\)</span> between two vectors is defined by the equation <span class="math notranslate nohighlight">\(\cos_{xy}(\alpha):=\frac{\langle x,y\rangle}{||x|| ||y||}\)</span>, where the angle brackets denote the <a class="reference external" href="https://en.wikipedia.org/wiki/Inner_product_space#Euclidean_space">inner product</a>, and <span class="math notranslate nohighlight">\(||x||:=\sqrt{\langle x,x \rangle}\)</span>.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">vector_angles</span></code> that gets two arrays X and Y with same shape (n,m) as parameters. Each row in the arrays corresponds to a vector. The function should return vector of shape (n,) with the corresponding angles between vectors of <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">Y</span></code> in degrees, not in radians. Again, don’t use loops, but use vectorized operations.</p>
 <p>Note: function <code class="docutils literal notranslate"><span class="pre">np.arccos</span></code> is only defined on the domain [-1.0,1.0]. If you try to compute <code class="docutils literal notranslate"><span class="pre">np.arccos(1.000000001)</span></code>, it will fail. These kind of errors can occur due to use of finite precision in numerical computations. Force the argument to be in the correct range (<code class="docutils literal notranslate"><span class="pre">clip</span></code> method).</p>
@@ -1971,9 +1961,7 @@ operands could not be broadcast together with shapes (3,) (2,)
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 16 (multiplication table revisited)</p>
-</div>
+<div class="admonition note"><a id="Exercise-16-(multiplication-table-revisited)">Exercise 16 (multiplication table revisited)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">multiplication_table</span></code> that gets a positive integer <code class="docutils literal notranslate"><span class="pre">n</span></code> as parameter. The function should return an array with shape (n,n). The element at index <code class="docutils literal notranslate"><span class="pre">(i,j)</span></code> should be <code class="docutils literal notranslate"><span class="pre">i*j</span></code>. Don’t use <code class="docutils literal notranslate"><span class="pre">for</span></code> loops! In your solution, rely on broadcasting, the <code class="docutils literal notranslate"><span class="pre">np.arange</span></code> function, reshaping and vectorized operators. Example of usage:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(multiplication_table(4))
 [[0 0 0 0]

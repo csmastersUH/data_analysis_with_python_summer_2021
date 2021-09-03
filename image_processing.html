@@ -532,9 +532,7 @@ The image consists of 235520 pixels
 </div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 11 (to grayscale)</p>
-</div>
+<div class="admonition note"><a id="Exercise-11-(to-grayscale)">Exercise 11 (to grayscale)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Part 1.</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">to_grayscale</span></code> that takes an RGB image (three dimensional array) and returns a two dimensional gray-scale image. The conversion to gray-scale should take a weighted sum of the red, green, and blue values, and use that as the value of gray. The first axis is the x, the second is y, and the third is the color components (red, green, blue). Use the weights 0.2126, 0.7152, and 0.0722 for red, green, and blue, respectively. These weights are so because the human eye is most
@@ -543,9 +541,7 @@ sensitive to green color and least sensitive to blue color.</p>
 <p>Part 2.</p>
 <p>Write functions <code class="docutils literal notranslate"><span class="pre">to_red</span></code>, <code class="docutils literal notranslate"><span class="pre">to_green</span></code>, and <code class="docutils literal notranslate"><span class="pre">to_blue</span></code> that get a three dimensional array as a parameter and return a three dimensional arrays. For instance, the function <code class="docutils literal notranslate"><span class="pre">to_red</span></code> should zero out the green and blue color components and return the result. In the <code class="docutils literal notranslate"><span class="pre">main</span></code> function create a figure with three subfigures: the top one should be the red image, the middle one the green image, and the bottom one the blue image.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 12 (radial fade)</p>
-</div>
+<div class="admonition note"><a id="Exercise-12-(radial-fade)">Exercise 12 (radial fade)</a></div>
 <p>Make program that does fading of an image as earlier, except now not in horizontal direction but in radial direction. As we move away from the centre of the image, the pixels fade to black.</p>
 <p>Part1.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">center</span></code> that returns coordinate pair (center_y, center_x) of the image center. Note that these coordinates might not be integers. Example of usage:</p>

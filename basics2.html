@@ -653,9 +653,7 @@ He’s a powerful man.
 <p>The <code class="docutils literal notranslate"><span class="pre">IGNORECASE</span></code> flag makes lower- and uppercase characters appear as equal. The <code class="docutils literal notranslate"><span class="pre">MULTILINE</span></code> flag makes the special characters <code class="docutils literal notranslate"><span class="pre">ˆ</span></code> and <code class="docutils literal notranslate"><span class="pre">$</span></code> match the beginning and end of each line in addition to the beginning and end of the whole string. These flags make <code class="docutils literal notranslate"><span class="pre">\A</span></code> differ from <code class="docutils literal notranslate"><span class="pre">ˆ</span></code>, and <code class="docutils literal notranslate"><span class="pre">\Z</span></code> differ from <code class="docutils literal notranslate"><span class="pre">$</span></code>. The <code class="docutils literal notranslate"><span class="pre">DOTALL</span></code> flag makes the character class <code class="docutils literal notranslate"><span class="pre">.</span></code> (dot) also accept the newline character, in addition to all the other letters.</p>
 <p>When giving multiple flags to the compile function, the flags can be separated with the <code class="docutils literal notranslate"><span class="pre">|</span></code> sign. For example, <code class="docutils literal notranslate"><span class="pre">re.compile(pattern,</span> <span class="pre">re.MULTILINE</span> <span class="pre">|</span> <span class="pre">re.DOTALL)</span></code>. This is equal to <code class="docutils literal notranslate"><span class="pre">re.compile('(?m)(?s)'</span> <span class="pre">+</span> <span class="pre">pattern)</span></code>.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 1 (integers in brackets)</p>
-</div>
+<div class="admonition note"><a id="Exercise-1-(integers-in-brackets)">Exercise 1 (integers in brackets)</a></div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">integers_in_brackets</span></code> that finds from a given string all integers that are enclosed in brackets.</p>
 <p>Example run: <code class="docutils literal notranslate"><span class="pre">integers_in_brackets("</span>  <span class="pre">afd</span> <span class="pre">[asd]</span> <span class="pre">[12</span> <span class="pre">]</span> <span class="pre">[a34]</span>  <span class="pre">[</span> <span class="pre">-43</span> <span class="pre">]tt</span> <span class="pre">[+12]xxx")</span></code> returns <code class="docutils literal notranslate"><span class="pre">[12,</span> <span class="pre">-43,</span> <span class="pre">12]</span></code>. So there can be whitespace between the number and the brackets, but no other character besides those that make up the integer.</p>
 <p>Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
@@ -872,9 +870,7 @@ your program, the command line parameters are visible as follows. The name of th
 interface.)</p>
 <p>The function <code class="docutils literal notranslate"><span class="pre">sys.exit</span></code> can be used to exit immediately your program. The integer parameter given to this function is the return value of the program. Usually the return value 0 means that the program ran successfully, and non-zero integer means that an error occurred. This return value is accessible from the terminal window from where you started the program.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 2 (file listing)</p>
-</div>
+<div class="admonition note"><a id="Exercise-2-(file-listing)">Exercise 2 (file listing)</a></div>
 <p>The file <code class="docutils literal notranslate"><span class="pre">src/listing.txt</span></code> contains a list of files with one line per file. Each line contains seven fields: access rights, number of references, owner’s name, name of owning group, file size, date, filename. These fields are separated with one or more spaces. Note that there may be spaces also within these seven fields.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">file_listing</span></code> that loads the file <code class="docutils literal notranslate"><span class="pre">src/listing.txt</span></code>. It should return a list of tuples (size, month, day, hour, minute, filename). Use regular expressions to do this (either <code class="docutils literal notranslate"><span class="pre">match</span></code>, <code class="docutils literal notranslate"><span class="pre">search</span></code>, <code class="docutils literal notranslate"><span class="pre">findall</span></code>, or <code class="docutils literal notranslate"><span class="pre">finditer</span></code> method).</p>
 <p>An example: for line</p>
@@ -883,9 +879,7 @@ interface.)</p>
 </div>
 <p>the function should create the tuple <code class="docutils literal notranslate"><span class="pre">(25399,</span> <span class="pre">"Nov",</span> <span class="pre">2,</span> <span class="pre">21,</span> <span class="pre">25,</span> <span class="pre">"exception_hierarchy.pdf")</span></code>.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 3 (red green blue)</p>
-</div>
+<div class="admonition note"><a id="Exercise-3-(red-green-blue)">Exercise 3 (red green blue)</a></div>
 <p>The file <code class="docutils literal notranslate"><span class="pre">src/rgb.txt</span></code> contains names of colors and their numerical representations in RGB format. The RBG format allows a color to be represented as a mixture of red, green, and blue components. Each component can have an integer value in the range [0,255]. Each line in the file contains four fields: red, green, blue, and colorname. Each field is separated by some amount of whitespace (tab or space in this case). The text file is formatted to make it print nicely, but that makes it harder to
 process by a computer. Note that some color names can also contain a space character.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">red_green_blue</span></code> that reads the file <code class="docutils literal notranslate"><span class="pre">rgb.txt</span></code> from the folder <code class="docutils literal notranslate"><span class="pre">src</span></code>. Remove the irrelevant first line of the file. The function should return a list of strings. Clean-up the file so that the strings in the returned list have four fields separated by a single tab character (<code class="docutils literal notranslate"><span class="pre">\t</span></code>). Use regular expressions to do this.</p>
@@ -894,9 +888,7 @@ process by a computer. Note that some color names can also contain a space chara
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 4 (word frequencies)</p>
-</div>
+<div class="admonition note"><a id="Exercise-4-(word-frequencies)">Exercise 4 (word frequencies)</a></div>
 <p>Create function <code class="docutils literal notranslate"><span class="pre">word_frequencies</span></code> that gets a filename as a parameter and returns a dict with the word frequencies. In the dictionary the keys are the words and the corresponding values are the number of times that word occurred in the file specified by the function parameter. Read all the lines from the file and split the lines into words using the <code class="docutils literal notranslate"><span class="pre">split()</span></code> method. Further, remove punctuation from the ends of words using the <code class="docutils literal notranslate"><span class="pre">strip("""!"#$%&amp;'()*,-./:;?@[]_""")</span></code> method call.</p>
 <p>Test this function in the main function using the file <code class="docutils literal notranslate"><span class="pre">alice.txt</span></code>. In the output, there should be a word and its count per line separated by a tab:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The     64
@@ -907,9 +899,7 @@ of      303
 </pre></div>
 </div>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 5 (summary)</p>
-</div>
+<div class="admonition note"><a id="Exercise-5-(summary)">Exercise 5 (summary)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Part 1.</p>
 <p>Create a function called <code class="docutils literal notranslate"><span class="pre">summary</span></code> that gets a filename as a parameter. The input file should contain a floating point number on each line of the file. Make your function read these numbers and then return a triple containing the sum, average, and standard deviation of these numbers for the file. As a reminder, the formula for corrected sample standard deviation is <span class="math notranslate nohighlight">\(\sqrt{\frac{\sum_{i=1}^n (x_i - \overline x)^2}{n-1}}\)</span>, where <span class="math notranslate nohighlight">\(\overline x\)</span> is the average.</p>
@@ -930,9 +920,7 @@ File: src/example2.txt Sum: 5446.200000 Average: 1815.400000 Stddev: 3124.294045
 </div>
 <p>We will cover more about exceptions later in the course.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 6 (file count)</p>
-</div>
+<div class="admonition note"><a id="Exercise-6-(file-count)">Exercise 6 (file count)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Part 1.</p>
 <p>Create a function <code class="docutils literal notranslate"><span class="pre">file_count</span></code> that gets a filename as parameter and returns a triple of numbers. The function should read the file, count the number of lines, words, and characters in the file, and return a triple with these count in this order. You get division into words by splitting at whitespace. You don’t have to remove punctuation.</p>
@@ -945,9 +933,7 @@ File: src/example2.txt Sum: 5446.200000 Average: 1815.400000 Stddev: 3124.294045
 </div>
 <p>The fields are separated by tabs (<code class="docutils literal notranslate"><span class="pre">\t</span></code>). The fields are in order: linecount, wordcount, charactercount, filename.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 7 (file extensions)</p>
-</div>
+<div class="admonition note"><a id="Exercise-7-(file-extensions)">Exercise 7 (file extensions)</a></div>
 <p>This exercise can give two points at maximum!</p>
 <p>Part 1.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">file_extensions</span></code> that gets as a parameter a filename. It should read through the lines from this file. Each line contains a filename. Find the extension for each filename. The function should return a pair, where the first element is a list containing all filenames with no extension (with the preceding period (<code class="docutils literal notranslate"><span class="pre">.</span></code>) removed). The second element of the pair is a dictionary with extensions as keys and corresponding values are lists with filenames having that extension.</p>
@@ -1024,9 +1010,7 @@ type of the object</p>
 </ul>
 <p>If instead we want to bind the attribute <code class="docutils literal notranslate"><span class="pre">a</span></code>, things are much simpler. <code class="docutils literal notranslate"><span class="pre">x.a</span> <span class="pre">=</span> <span class="pre">value</span></code> will set the instance attribute. And <code class="docutils literal notranslate"><span class="pre">X.a</span> <span class="pre">=</span> <span class="pre">value</span></code> will set the class attribute. Note that if a base of <code class="docutils literal notranslate"><span class="pre">X</span></code>, the class <code class="docutils literal notranslate"><span class="pre">X</span></code>, and the instance <code class="docutils literal notranslate"><span class="pre">x</span></code> each have an attribute called <code class="docutils literal notranslate"><span class="pre">a</span></code>, then <code class="docutils literal notranslate"><span class="pre">x.a</span></code> hides <code class="docutils literal notranslate"><span class="pre">X.a</span></code>, and <code class="docutils literal notranslate"><span class="pre">X.a</span></code> hides the attribute of the base class.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 8 (prepend)</p>
-</div>
+<div class="admonition note"><a id="Exercise-8-(prepend)">Exercise 8 (prepend)</a></div>
 <p>Create a class called <code class="docutils literal notranslate"><span class="pre">Prepend</span></code>. We create an instance of the class by giving a string as a parameter to the initializer. The initializer stores the parameter in an instance attribute <code class="docutils literal notranslate"><span class="pre">start</span></code>. The class also has a method <code class="docutils literal notranslate"><span class="pre">write(s)</span></code> which prints the string <code class="docutils literal notranslate"><span class="pre">s</span></code> prepended with the <code class="docutils literal notranslate"><span class="pre">start</span></code> string. An example of usage:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Prepend</span><span class="p">(</span><span class="s2">"+++ "</span><span class="p">)</span>
 <span class="n">p</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">);</span>
@@ -1138,9 +1122,7 @@ division (//) | ———————–</p></td>
 <p>In addition to the normal methods of containers, like the <code class="docutils literal notranslate"><span class="pre">append</span></code> method of the list, there are several operations that are handled by calls to special methods of the container class. The test whether <code class="docutils literal notranslate"><span class="pre">x</span></code> is a member of container <code class="docutils literal notranslate"><span class="pre">c</span></code> is done by the operation <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">in</span> <span class="pre">c</span></code>. The corresponding special method call is <code class="docutils literal notranslate"><span class="pre">x.__contains__(y)</span></code>. Deletion of an element of container <code class="docutils literal notranslate"><span class="pre">c</span></code> can be done with the operation <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">c[key]</span></code>. This will result in the method call <code class="docutils literal notranslate"><span class="pre">x.__delitem__</span></code>.</p>
 <p>Reading an item of a container <code class="docutils literal notranslate"><span class="pre">c</span></code> is done with the operation <code class="docutils literal notranslate"><span class="pre">c[key]</span></code>. The corresponding method call is <code class="docutils literal notranslate"><span class="pre">c.__getitem__(key)</span></code>. Similarly, setting an item with <code class="docutils literal notranslate"><span class="pre">c[key]=value</span></code> results in the call <code class="docutils literal notranslate"><span class="pre">c.__setitem__(key,value)</span></code>. The number of elements in a container <code class="docutils literal notranslate"><span class="pre">c</span></code> can be queried with the function call <code class="docutils literal notranslate"><span class="pre">len(c)</span></code>. This function call actually calls the special method <code class="docutils literal notranslate"><span class="pre">c.__len__</span></code>. The call <code class="docutils literal notranslate"><span class="pre">iter(c)</span></code> will call the special method <code class="docutils literal notranslate"><span class="pre">__iter__</span></code>.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 9 (rational)</p>
-</div>
+<div class="admonition note"><a id="Exercise-9-(rational)">Exercise 9 (rational)</a></div>
 <p>Create a class <code class="docutils literal notranslate"><span class="pre">Rational</span></code> whose instances are rational numbers. A new rational number can be created with the call to the class. For example, the call <code class="docutils literal notranslate"><span class="pre">r=Rational(1,4)</span></code> creates a rational number “one quarter”. Make the instances support the following operations: <code class="docutils literal notranslate"><span class="pre">+</span></code> <code class="docutils literal notranslate"><span class="pre">-</span></code> <code class="docutils literal notranslate"><span class="pre">*</span></code> <code class="docutils literal notranslate"><span class="pre">/</span></code> <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <code class="docutils literal notranslate"><span class="pre">==</span></code> with their natural behaviour. Make the rationals also printable so that from the printout we can clearly see that they are rational numbers.</p>
 <hr/></div>
 </div>
@@ -1278,9 +1260,7 @@ You didn’t enter a number
 <p>Python uses a different approach to error checking than many other common languages. Instead of trying to beforehand check that all the inputs are of correct type and then contents of input variables are sensible for some operations, Python first tries the operations and then checks whether they caused any exceptions. This is partly what duck typing is about: a function works for a set of inputs if all the operations in the function body make sense for those inputs. So, that’s why the parameters
 of functions aren’t specified to be of any certain type.</p>
 <hr class="docutils"/>
-<div class="admonition note">
-<p>Exercise 10 (extract numbers)</p>
-</div>
+<div class="admonition note"><a id="Exercise-10-(extract-numbers)">Exercise 10 (extract numbers)</a></div>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">extract_numbers</span></code> that gets a string as a parameter. It should return a list of numbers that can be both ints and floats. Split the string to words at whitespace using the <code class="docutils literal notranslate"><span class="pre">split()</span></code> method. Then iterate through each word, and initially try to convert to an int. If unsuccesful, then try to convert to a float. If not a number then skip the word.</p>
 <p>Example run: <code class="docutils literal notranslate"><span class="pre">print(extract_numbers("abd</span> <span class="pre">123</span> <span class="pre">1.2</span> <span class="pre">test</span> <span class="pre">13.2</span> <span class="pre">-1"))</span></code> will return <code class="docutils literal notranslate"><span class="pre">[123,</span> <span class="pre">1.2,</span> <span class="pre">13.2,</span> <span class="pre">-1]</span></code></p>
 <hr/></div>
