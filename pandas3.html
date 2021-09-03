@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en">
+<html class="writer-html5" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pandas (continues) — Data analysis with Python - Summer 2021  documentation</title>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
 <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js" type="text/javascript"></script>
-<script src="_static/jquery.js" type="text/javascript"></script>
-<script src="_static/underscore.js" type="text/javascript"></script>
-<script src="_static/doctools.js" type="text/javascript"></script>
-<script src="_static/language_data.js" type="text/javascript"></script>
-<script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/doctools.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
 <script src="_static/js/theme.js" type="text/javascript"></script>
 <link href="genindex.html" rel="index" title="Index"/>
 <link href="search.html" rel="search" title="Search"/>
@@ -41,33 +44,33 @@
 </div>
 </div>
 <div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="instructions.html">Initializing course environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Running Python code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 1:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 1:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="basics.html">Python</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 2:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 2:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="basics2.html">Python (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="numpy.html">NumPy</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 3:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 3:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="numpy2.html">NumPy (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matplotlib.html">Matplotlib</a></li>
 <li class="toctree-l1"><a class="reference internal" href="image_processing.html">Image processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pandas1.html">Pandas</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 4:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 4:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pandas2.html">Pandas (continues)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 5:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 5:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Pandas (continues)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#Catenating-datasets">Catenating datasets</a></li>
@@ -82,13 +85,13 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="linear_regression.html">Machine learning: linear regression</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week6:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week6:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bayes.html">ML: Naive Bayes classification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustering.html">ML: Clustering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pca.html">ML: Principal component analysis</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week7:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week7:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project.html">Project work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html#running-tests-when-peer-reviewing-students-notebooks">Running tests when peer-reviewing students notebooks</a></li>
@@ -119,31 +122,45 @@
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput,
-div.nbinput div.prompt,
-div.nbinput div.input_area,
-div.nbinput div[class*=highlight],
-div.nbinput div[class*=highlight] pre,
-div.nboutput,
-div.nbinput div.prompt,
-div.nbinput div.output_area,
-div.nboutput div[class*=highlight],
-div.nboutput div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
 }
 
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
 /* avoid gaps between output lines */
-div.nboutput div[class*=highlight] pre {
+div.nboutput.container div[class*=highlight] pre {
     line-height: normal;
 }
 
 /* input/output containers */
-div.nbinput,
-div.nboutput {
+div.nbinput.container,
+div.nboutput.container {
     display: -webkit-flex;
     display: flex;
     align-items: flex-start;
@@ -151,92 +168,104 @@ div.nboutput {
     width: 100%;
 }
 @media (max-width: 540px) {
-    div.nbinput,
-    div.nboutput {
+    div.nbinput.container,
+    div.nboutput.container {
         flex-direction: column;
     }
 }
 
 /* input container */
-div.nbinput {
+div.nbinput.container {
     padding-top: 5px;
 }
 
 /* last container */
-div.nblast {
+div.nblast.container {
     padding-bottom: 5px;
 }
 
 /* input prompt */
-div.nbinput div.prompt pre {
+div.nbinput.container div.prompt pre {
     color: #307FC1;
 }
 
 /* output prompt */
-div.nboutput div.prompt pre {
+div.nboutput.container div.prompt pre {
     color: #BF5B3D;
 }
 
 /* all prompts */
-div.nbinput div.prompt,
-div.nboutput div.prompt {
-    min-width: 5ex;
-    padding-top: 0.4em;
-    padding-right: 0.4em;
-    text-align: right;
-    flex: 0;
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
 }
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
 @media (max-width: 540px) {
-    div.nbinput div.prompt,
-    div.nboutput div.prompt {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
         text-align: left;
         padding: 0.4em;
     }
-    div.nboutput div.prompt.empty {
+    div.nboutput.container div.prompt.empty {
         padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
     }
 }
 
 /* disable scrollbars on prompts */
-div.nbinput div.prompt pre,
-div.nboutput div.prompt pre {
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
     overflow: hidden;
 }
 
 /* input/output area */
-div.nbinput div.input_area,
-div.nboutput div.output_area {
-    padding: 0.4em;
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
     -webkit-flex: 1;
     flex: 1;
     overflow: auto;
 }
 @media (max-width: 540px) {
-    div.nbinput div.input_area,
-    div.nboutput div.output_area {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
         width: 100%;
     }
 }
 
 /* input area */
-div.nbinput div.input_area {
+div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
-div.nboutput div[class*=MathJax] {
+div.nboutput.container div[class*=MathJax] {
     text-align: left !important;
 }
 
 /* override sphinx.ext.imgmath center alignment in output cells */
-div.nboutput div.math p {
+div.nboutput.container div.math p {
     text-align: left;
 }
 
 /* standard error */
-div.nboutput div.output_area.stderr {
+div.nboutput.container div.output_area.stderr {
     background: #fdd;
 }
 
@@ -280,6 +309,28 @@ div.nboutput div.output_area.stderr {
 .ansi-bold { font-weight: bold; }
 .ansi-underline { text-decoration: underline; }
 
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
 /* Some additional styling taken form the Jupyter notebook CSS */
 div.rendered_html table {
   border: none;
@@ -317,13 +368,13 @@ div.rendered_html tbody tr:hover {
 /* CSS overrides for sphinx_rtd_theme */
 
 /* 24px margin */
-.nbinput.nblast,
-.nboutput.nblast {
+.nbinput.nblast.container,
+.nboutput.nblast.container {
     margin-bottom: 19px;  /* padding has already 5px */
 }
 
 /* ... except between code cells! */
-.nblast + .nbinput {
+.nblast.container + .nbinput.container {
     margin-top: -19px;
 }
 
@@ -337,42 +388,44 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="admonition note">
-This page was generated from <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/blob/master/pandas3.ipynb">pandas3.ipynb</a>.
+<p>This page was generated from <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/blob/master/pandas3.ipynb">pandas3.ipynb</a>.
 <span class="raw-html"><br/><a href="https://colab.research.google.com/github/csmastersUH/data_analysis_with_python_summer_2021/blob/master/pandas3.ipynb"><img align="left" alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" title="Open and Execute in Google Colaboratory"/></a></span>
-<span class="raw-html"><br/></span></div>
-<!--NAVIGATION--><table border="1" class="docutils">
+<span class="raw-html"><br/></span></p>
+</div>
+<!--NAVIGATION--><p><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></p>
+<table class="docutils align-default">
 <colgroup>
-<col width="33%"/>
-<col width="33%"/>
-<col width="33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><ul class="first last simple">
+<thead>
+<tr class="row-odd"><th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
-<th class="head"><ul class="first last simple">
+<th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
-<th class="head"><ul class="first last simple">
+<th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="#Exercise-1-(split-date-continues)">Exercise 1 (split date continues)</a></td>
-<td><a class="reference external" href="#Exercise-2-(cycling-weather)">Exercise 2 (cycling weather)</a></td>
-<td><a class="reference external" href="#Exercise-3-(top-bands)">Exercise 3 (top bands)</a></td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="#Exercise-1-(split-date-continues)">Exercise 1 (split date continues)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-2-(cycling-weather)">Exercise 2 (cycling weather)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-3-(top-bands)">Exercise 3 (top bands)</a></p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="#Exercise-4-(cyclists-per-day)">Exercise 4 (cyclists per day)</a></td>
-<td><a class="reference external" href="#Exercise-5-(best-record-company)">Exercise 5 (best record company)</a></td>
-<td><a class="reference external" href="#Exercise-6-(suicide-fractions)">Exercise 6 (suicide fractions)</a></td>
+<tr class="row-odd"><td><p><a class="reference external" href="#Exercise-4-(cyclists-per-day)">Exercise 4 (cyclists per day)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-5-(best-record-company)">Exercise 5 (best record company)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-6-(suicide-fractions)">Exercise 6 (suicide fractions)</a></p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="#Exercise-7-(suicide-weather)">Exercise 7 (suicide weather)</a></td>
-<td><a class="reference external" href="#Exercise-8-(bicycle-timeseries)">Exercise 8 (bicycle timeseries)</a></td>
-<td><a class="reference external" href="#Exercise-9-(commute)">Exercise 9 (commute)</a></td>
+<tr class="row-even"><td><p><a class="reference external" href="#Exercise-7-(suicide-weather)">Exercise 7 (suicide weather)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-8-(bicycle-timeseries)">Exercise 8 (bicycle timeseries)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-9-(commute)">Exercise 9 (commute)</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -750,12 +803,12 @@ This page was generated from <a class="reference external" href="https://github.
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>0    A0
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0    A0
 0    A0
 Name: A, dtype: object
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>This is not usually what we want! There are three solutions to this. Firstly, deny creation of duplicated indices by giving the <code class="docutils literal notranslate"><span class="pre">verify_integrity</span></code> parameter to the <code class="docutils literal notranslate"><span class="pre">concat</span></code> function:</p>
 <div class="nbinput docutils container">
@@ -920,10 +973,10 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>'A0'
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+'A0'
+</pre></div></div>
 </div>
 <p>Everything works similarly, when we want to catenate horizontally:</p>
 <div class="nbinput docutils container">
@@ -1108,12 +1161,14 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 </div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-1-(split-date-continues)">Exercise 1 (split date continues)</a></div>
+<div class="admonition note">
+<p>Exercise 1 (split date continues)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">split_date_continues</span></code> that does</p>
 <ul class="simple">
-<li>read the bicycle data set</li>
-<li>clean the data set of columns/rows that contain only missing values</li>
-<li>drops the <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column and replaces it with its splitted components as before</li>
+<li><p>read the bicycle data set</p></li>
+<li><p>clean the data set of columns/rows that contain only missing values</p></li>
+<li><p>drops the <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column and replaces it with its splitted components as before</p></li>
 </ul>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">concat</span></code> function to do this. The function should return a DataFrame with 25 columns (first five related to the date and then the rest 20 conserning the measument location.</p>
 <p><strong>Hint</strong>: You may use your solution or the model solution from exercise 16 of the previous set as a starting point.</p>
@@ -1672,11 +1727,15 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 </div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-2-(cycling-weather)">Exercise 2 (cycling weather)</a></div>
+<div class="admonition note">
+<p>Exercise 2 (cycling weather)</p>
+</div>
 <p>Merge the processed cycling data set (from the previous exercise) and weather data set along the columns year, month, and day. Note that the names of these columns might be different in the two tables: use the <code class="docutils literal notranslate"><span class="pre">left_on</span></code> and <code class="docutils literal notranslate"><span class="pre">right_on</span></code> parameters. Then drop useless columns ‘m’, ‘d’, ‘Time’, and ‘Time zone’.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">cycling_weather</span></code> that reads the data sets and returns the resulting DataFrame.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-3-(top-bands)">Exercise 3 (top bands)</a></div>
+<div class="admonition note">
+<p>Exercise 3 (top bands)</p>
+</div>
 <p>Merge the DataFrames UK top40 and the bands DataFrame that are stored in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. Do all this in the parameterless function <code class="docutils literal notranslate"><span class="pre">top_bands</span></code>, which should return the merged DataFrame. Use the <code class="docutils literal notranslate"><span class="pre">left_on</span></code> and <code class="docutils literal notranslate"><span class="pre">right_on</span></code> parameters to <code class="docutils literal notranslate"><span class="pre">merge</span></code>. Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <hr/></div>
 <div class="section" id="Aggregates-and-groupings">
@@ -1811,10 +1870,10 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7fa1a21d32b0&gt;
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7fa1a21d32b0&gt;
+</pre></div></div>
 </div>
 <p>Nothing happened yet, but the <code class="docutils literal notranslate"><span class="pre">groupby</span></code> object knows how the division into groups is done. This is called a lazy operation. We can query the number of groups in the <code class="docutils literal notranslate"><span class="pre">groupby</span></code> object:</p>
 <div class="nbinput docutils container">
@@ -1830,10 +1889,10 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>12
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+12
+</pre></div></div>
 </div>
 <p>We can iterate through all the groups:</p>
 <div class="nbinput docutils container">
@@ -2234,10 +2293,10 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x7fa15af92be0&gt;
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x7fa15af92be0&gt;
+</pre></div></div>
 </div>
 <p>For each DataFrame corresponding to a group the Temperature column was chosen. Still nothing was shown, because we haven’t applied any operation on the groups.</p>
 <p>The common methods also include the aggregation methods. Let’s try to apply the <code class="docutils literal notranslate"><span class="pre">mean</span></code> aggregation:</p>
@@ -2254,8 +2313,9 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Month
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Month
 1     -2.316129
 2     -2.389286
 3      0.983871
@@ -2269,8 +2329,7 @@ Indexes have overlapping values: Int64Index([0, 1], dtype='int64')
 11     3.950000
 12     1.741935
 Name: Temperature, dtype: float64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Now what happened was that after the mean aggregation was performed on each group, the results were automatically combined into a resulting DataFrame. Let’s try some other aggregation:</p>
 <div class="nbinput docutils container">
@@ -2286,8 +2345,9 @@ Name: Temperature, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Month
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Month
 1      26.9
 2      21.0
 3      29.7
@@ -2301,8 +2361,7 @@ Name: Temperature, dtype: float64
 11    117.2
 12    133.6
 Name: Precipitation, dtype: float64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Ok, the -1.0 values in the Precipitation field are causing trouble here, let’s convert them to zeros:</p>
 <div class="nbinput docutils container">
@@ -2423,8 +2482,9 @@ Name: Precipitation, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Month
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Month
 1      38.9
 2      35.0
 3      41.7
@@ -2438,8 +2498,7 @@ Name: Precipitation, dtype: float64
 11    120.2
 12    140.6
 Name: Precipitation, dtype: float64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="section" id="Other-ways-to-operate-on-groups">
 <h3>Other ways to operate on groups<a class="headerlink" href="#Other-ways-to-operate-on-groups" title="Permalink to this headline">¶</a></h3>
@@ -4171,29 +4230,37 @@ Name: Precipitation, dtype: float64
 </div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-4-(cyclists-per-day)">Exercise 4 (cyclists per day)</a></div>
+<div class="admonition note">
+<p>Exercise 4 (cyclists per day)</p>
+</div>
 <p>This exercise can give two points at maximum!</p>
 <p>Part 1.</p>
 <p>Read, clean and parse the bicycle data set as before. Group the rows by year, month, and day. Get the sum for each group. Make function <code class="docutils literal notranslate"><span class="pre">cyclists_per_day</span></code> that does the above. The function should return a DataFrame. Make sure that the columns Hour and Weekday are not included in the returned DataFrame.</p>
 <p>Part 2.</p>
 <p>In the <code class="docutils literal notranslate"><span class="pre">main</span></code> function, using the function <code class="docutils literal notranslate"><span class="pre">cyclists_per_day</span></code>, get the daily counts. The index of the DataFrame now consists of tuples (Year, Month, Day). Then restrict this data to August of year 2017, and plot this data. Don’t forget to call the <code class="docutils literal notranslate"><span class="pre">plt.show</span></code> function of matplotlib. The x-axis should have ticks from 1 to 31, and there should be a curve to each measuring station. Can you spot the weekends?</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-5-(best-record-company)">Exercise 5 (best record company)</a></div>
+<div class="admonition note">
+<p>Exercise 5 (best record company)</p>
+</div>
 <p>We use again the UK top 40 data set from the first week of 1964 in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. Here we define “goodness” of a record company (<code class="docutils literal notranslate"><span class="pre">Publisher</span></code>) based on the sum of the weeks on chart (WoC) of its singles. Return a DataFrame of the singles by the best record company (a subset of rows of the original DataFrame). Do this with function <code class="docutils literal notranslate"><span class="pre">best_record_company</span></code>.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-6-(suicide-fractions)">Exercise 6 (suicide fractions)</a></div>
+<div class="admonition note">
+<p>Exercise 6 (suicide fractions)</p>
+</div>
 <p>Load the suicide data set from <code class="docutils literal notranslate"><span class="pre">src</span></code> folder. This data was originally downloaded from <a class="reference external" href="https://www.kaggle.com/szamil/who-suicide-statistics">Kaggle</a>. Kaggle contains lots of interesting open data sets.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">suicide_fractions</span></code> that loads the data set and returns a Series that has the country as the (row) index and as the column the mean fraction of suicides per population in that country. In other words, the value is the average of suicide fractions. The information about year, sex and age is not used.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-7-(suicide-weather)">Exercise 7 (suicide weather)</a></div>
+<div class="admonition note">
+<p>Exercise 7 (suicide weather)</p>
+</div>
 <p>Copy the function <code class="docutils literal notranslate"><span class="pre">suicide</span> <span class="pre">fractions</span></code> from the previous exercise.</p>
 <p>Implement function <code class="docutils literal notranslate"><span class="pre">suicide_weather</span></code> as described below. We use the dataset of average temperature (over years 1961-1990) in different countries from <code class="docutils literal notranslate"><span class="pre">src/List_of_countries_by_average_yearly_temperature.html</span></code> (<a class="reference external" href="https://en.wikipedia.org/wiki/List_of_countries_by_average_yearly_temperature">https://en.wikipedia.org/wiki/List_of_countries_by_average_yearly_temperature</a>) . You can use the function <code class="docutils literal notranslate"><span class="pre">pd.read_html</span></code> to get all the tables from a html page. By default <code class="docutils literal notranslate"><span class="pre">pd.read_html</span></code> does not know which row contains column headers and which column contains row headers.
 Therefore, you have to give both <code class="docutils literal notranslate"><span class="pre">index_col</span></code> and <code class="docutils literal notranslate"><span class="pre">header</span></code> parameters to <code class="docutils literal notranslate"><span class="pre">read_html</span></code>. Maku sure you use the country as the (row) index for both of the DataFrames. What is the <a class="reference external" href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient">Spearman correlation</a> between these variables? Use the <code class="docutils literal notranslate"><span class="pre">corr</span></code> method of Series object. Note the the two Series need not be sorted as the indices of the rows (country names) are used to align them.</p>
 <p>The return value of the function <code class="docutils literal notranslate"><span class="pre">suicide_weather</span></code> is a tuple (suicide_rows, temperature_rows, common_rows, spearman_correlation) The output from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function should be of the following form:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Suicide</span> <span class="n">DataFrame</span> <span class="n">has</span> <span class="n">x</span> <span class="n">rows</span>
-<span class="n">Temperature</span> <span class="n">DataFrame</span> <span class="n">has</span> <span class="n">x</span> <span class="n">rows</span>
-<span class="n">Common</span> <span class="n">DataFrame</span> <span class="n">has</span> <span class="n">x</span> <span class="n">rows</span>
-<span class="n">Spearman</span> <span class="n">correlation</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">x</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Suicide DataFrame has x rows
+Temperature DataFrame has x rows
+Common DataFrame has x rows
+Spearman correlation: x.x
 </pre></div>
 </div>
 <p>You might have trouble when trying to convert the temperatures to float. The is because the negative numbers on that html page use a special <em>unicode minus sign</em>, which looks typographically nice, but the float constructor cannot interpret it as a minus sign. You can try out the following example:</p>
@@ -4242,10 +4309,10 @@ could not convert string to float: '−5'
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>-5.0
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+-5.0
+</pre></div></div>
 </div>
 <hr/></div>
 </div>
@@ -4267,12 +4334,12 @@ could not convert string to float: '−5'
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Index(['Year', 'Month', 'Day', 'Time', 'Time zone', 'Precipitation', 'Snow',
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Index(['Year', 'Month', 'Day', 'Time', 'Time zone', 'Precipitation', 'Snow',
        'Temperature'],
       dtype='object')
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>The column names <code class="docutils literal notranslate"><span class="pre">Year</span></code>, <code class="docutils literal notranslate"><span class="pre">Month</span></code>, and <code class="docutils literal notranslate"><span class="pre">Day</span></code> are now in appropriate form for the <code class="docutils literal notranslate"><span class="pre">to_datetime</span></code> function. It can convert these fields into a timestamp series, which we will add to the DataFrame.</p>
 <div class="nbinput docutils container">
@@ -4798,12 +4865,12 @@ could not convert string to float: '−5'
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>DatetimeIndex(['2017-07-03', '2017-07-10', '2017-07-17', '2017-07-24',
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+DatetimeIndex(['2017-07-03', '2017-07-10', '2017-07-17', '2017-07-24',
                '2017-07-31'],
               dtype='datetime64[ns]', freq='W-MON')
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
@@ -4818,8 +4885,9 @@ could not convert string to float: '−5'
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>DatetimeIndex(['2017-01-01', '2017-01-02', '2017-01-03', '2017-01-04',
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+DatetimeIndex(['2017-01-01', '2017-01-02', '2017-01-03', '2017-01-04',
                '2017-01-05', '2017-01-06', '2017-01-07', '2017-01-08',
                '2017-01-09', '2017-01-10',
                ...
@@ -4827,8 +4895,7 @@ could not convert string to float: '−5'
                '2017-12-26', '2017-12-27', '2017-12-28', '2017-12-29',
                '2017-12-30', '2017-12-31'],
               dtype='datetime64[ns]', length=360, freq=None)
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
@@ -4928,16 +4995,16 @@ could not convert string to float: '−5'
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>DatetimeIndex(['2017-07-03', '2017-07-04', '2017-07-05', '2017-07-06',
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+DatetimeIndex(['2017-07-03', '2017-07-04', '2017-07-05', '2017-07-06',
                '2017-07-07', '2017-07-10', '2017-07-11', '2017-07-12',
                '2017-07-13', '2017-07-14', '2017-07-17', '2017-07-18',
                '2017-07-19', '2017-07-20', '2017-07-21', '2017-07-24',
                '2017-07-25', '2017-07-26', '2017-07-27', '2017-07-28',
                '2017-07-31'],
               dtype='datetime64[ns]', freq='B')
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>We can get a general idea about the <code class="docutils literal notranslate"><span class="pre">Temperature</span></code> column by plotting it. Note how the index time series is shown nicely on the x-axis.</p>
 <div class="nbinput docutils container">
@@ -4972,10 +5039,10 @@ could not convert string to float: '−5'
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Rolling [window=30,center=True,axis=0]
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Rolling [window=30,center=True,axis=0]
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
@@ -4995,16 +5062,20 @@ could not convert string to float: '−5'
 </div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-8-(bicycle-timeseries)">Exercise 8 (bicycle timeseries)</a></div>
+<div class="admonition note">
+<p>Exercise 8 (bicycle timeseries)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">bicycle_timeseries</span></code> that</p>
 <ul class="simple">
-<li>reads the data set</li>
-<li>cleans it</li>
-<li>turns its <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column into (row) DatetimeIndex (that is, to row names) of that DataFrame</li>
-<li>returns the new DataFrame</li>
+<li><p>reads the data set</p></li>
+<li><p>cleans it</p></li>
+<li><p>turns its <code class="docutils literal notranslate"><span class="pre">Päivämäärä</span></code> column into (row) DatetimeIndex (that is, to row names) of that DataFrame</p></li>
+<li><p>returns the new DataFrame</p></li>
 </ul>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-9-(commute)">Exercise 9 (commute)</a></div>
+<div class="admonition note">
+<p>Exercise 9 (commute)</p>
+</div>
 <p>In function <code class="docutils literal notranslate"><span class="pre">commute</span></code> do the following:</p>
 <p>Use the function <code class="docutils literal notranslate"><span class="pre">bicycle_timeseries</span></code> to get the bicycle data. Restrict to August 2017, group by the weekday, aggregate by summing. Set the <code class="docutils literal notranslate"><span class="pre">Weekday</span></code> column to numbers from one to seven. Then set the column <code class="docutils literal notranslate"><span class="pre">Weekday</span></code> as the (row) index. Return the resulting DataFrame from the function.</p>
 <p>In the <code class="docutils literal notranslate"><span class="pre">main</span></code> function plot the DataFrame. Xticklabels should be the weekdays. Don’t forget to call <code class="docutils literal notranslate"><span class="pre">show</span></code> function!</p>
@@ -5019,7 +5090,8 @@ could not convert string to float: '−5'
 <p><a class="reference external" href="https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf">Pandas cheat sheet</a> Summary of most important Pandas’ functions and methods.</p>
 <p>Read the article <a class="reference external" href="https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf">Tidy Data</a>. The article uses the statistical software R as an example, but the ideas are relevant in general. Pandas operations maintain data in the tidy format.</p>
 <p>Pandas handles only one dimensional data (Series) and two dimensional data (DataFrame). While you can use <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html#hierarchical-indexing-multiindex">hierarchical indices</a> to simulate higher dimensional arrays, you should use the <a class="reference external" href="http://xarray.pydata.org/en/stable/index.html">xarray</a> library, if you need proper higher-dimensional arrays with labels. It is basically a cross between NumPy and Pandas.</p>
-<!--NAVIGATION--></div>
+<!--NAVIGATION--><p><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></p>
+</div>
 </div>
 </div>
 </div>
@@ -5031,7 +5103,7 @@ could not convert string to float: '−5'
 <hr/>
 <div role="contentinfo">
 <p>
-        © Copyright 2018-2021, Jarkko Toivonen.
+        © Copyright Creative Commons BY-NC-SA 4.0, free non-commercial use with attribution.
 
     </p>
 </div>

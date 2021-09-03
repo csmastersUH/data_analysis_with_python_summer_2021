@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en">
+<html class="writer-html5" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pandas — Data analysis with Python - Summer 2021  documentation</title>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
 <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js" type="text/javascript"></script>
-<script src="_static/jquery.js" type="text/javascript"></script>
-<script src="_static/underscore.js" type="text/javascript"></script>
-<script src="_static/doctools.js" type="text/javascript"></script>
-<script src="_static/language_data.js" type="text/javascript"></script>
-<script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/doctools.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
 <script src="_static/js/theme.js" type="text/javascript"></script>
 <link href="genindex.html" rel="index" title="Index"/>
 <link href="search.html" rel="search" title="Search"/>
@@ -41,22 +44,22 @@
 </div>
 </div>
 <div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="instructions.html">Initializing course environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Running Python code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 1:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 1:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="basics.html">Python</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 2:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 2:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="basics2.html">Python (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="numpy.html">NumPy</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 3:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 3:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="numpy2.html">NumPy (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matplotlib.html">Matplotlib</a></li>
@@ -68,22 +71,22 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">Week 4:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 4:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pandas2.html">Pandas (continues)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 5:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 5:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pandas3.html">Pandas (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear_regression.html">Machine learning: linear regression</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week6:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week6:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bayes.html">ML: Naive Bayes classification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustering.html">ML: Clustering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pca.html">ML: Principal component analysis</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week7:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week7:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project.html">Project work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html#running-tests-when-peer-reviewing-students-notebooks">Running tests when peer-reviewing students notebooks</a></li>
@@ -114,31 +117,45 @@
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput,
-div.nbinput div.prompt,
-div.nbinput div.input_area,
-div.nbinput div[class*=highlight],
-div.nbinput div[class*=highlight] pre,
-div.nboutput,
-div.nbinput div.prompt,
-div.nbinput div.output_area,
-div.nboutput div[class*=highlight],
-div.nboutput div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
 }
 
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
 /* avoid gaps between output lines */
-div.nboutput div[class*=highlight] pre {
+div.nboutput.container div[class*=highlight] pre {
     line-height: normal;
 }
 
 /* input/output containers */
-div.nbinput,
-div.nboutput {
+div.nbinput.container,
+div.nboutput.container {
     display: -webkit-flex;
     display: flex;
     align-items: flex-start;
@@ -146,92 +163,104 @@ div.nboutput {
     width: 100%;
 }
 @media (max-width: 540px) {
-    div.nbinput,
-    div.nboutput {
+    div.nbinput.container,
+    div.nboutput.container {
         flex-direction: column;
     }
 }
 
 /* input container */
-div.nbinput {
+div.nbinput.container {
     padding-top: 5px;
 }
 
 /* last container */
-div.nblast {
+div.nblast.container {
     padding-bottom: 5px;
 }
 
 /* input prompt */
-div.nbinput div.prompt pre {
+div.nbinput.container div.prompt pre {
     color: #307FC1;
 }
 
 /* output prompt */
-div.nboutput div.prompt pre {
+div.nboutput.container div.prompt pre {
     color: #BF5B3D;
 }
 
 /* all prompts */
-div.nbinput div.prompt,
-div.nboutput div.prompt {
-    min-width: 5ex;
-    padding-top: 0.4em;
-    padding-right: 0.4em;
-    text-align: right;
-    flex: 0;
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
 }
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
 @media (max-width: 540px) {
-    div.nbinput div.prompt,
-    div.nboutput div.prompt {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
         text-align: left;
         padding: 0.4em;
     }
-    div.nboutput div.prompt.empty {
+    div.nboutput.container div.prompt.empty {
         padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
     }
 }
 
 /* disable scrollbars on prompts */
-div.nbinput div.prompt pre,
-div.nboutput div.prompt pre {
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
     overflow: hidden;
 }
 
 /* input/output area */
-div.nbinput div.input_area,
-div.nboutput div.output_area {
-    padding: 0.4em;
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
     -webkit-flex: 1;
     flex: 1;
     overflow: auto;
 }
 @media (max-width: 540px) {
-    div.nbinput div.input_area,
-    div.nboutput div.output_area {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
         width: 100%;
     }
 }
 
 /* input area */
-div.nbinput div.input_area {
+div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
-div.nboutput div[class*=MathJax] {
+div.nboutput.container div[class*=MathJax] {
     text-align: left !important;
 }
 
 /* override sphinx.ext.imgmath center alignment in output cells */
-div.nboutput div.math p {
+div.nboutput.container div.math p {
     text-align: left;
 }
 
 /* standard error */
-div.nboutput div.output_area.stderr {
+div.nboutput.container div.output_area.stderr {
     background: #fdd;
 }
 
@@ -275,6 +304,28 @@ div.nboutput div.output_area.stderr {
 .ansi-bold { font-weight: bold; }
 .ansi-underline { text-decoration: underline; }
 
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
 /* Some additional styling taken form the Jupyter notebook CSS */
 div.rendered_html table {
   border: none;
@@ -312,13 +363,13 @@ div.rendered_html tbody tr:hover {
 /* CSS overrides for sphinx_rtd_theme */
 
 /* 24px margin */
-.nbinput.nblast,
-.nboutput.nblast {
+.nbinput.nblast.container,
+.nboutput.nblast.container {
     margin-bottom: 19px;  /* padding has already 5px */
 }
 
 /* ... except between code cells! */
-.nblast + .nbinput {
+.nblast.container + .nbinput.container {
     margin-top: -19px;
 }
 
@@ -332,34 +383,36 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="admonition note">
-This page was generated from <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/blob/master/pandas1.ipynb">pandas1.ipynb</a>.
+<p>This page was generated from <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/blob/master/pandas1.ipynb">pandas1.ipynb</a>.
 <span class="raw-html"><br/><a href="https://colab.research.google.com/github/csmastersUH/data_analysis_with_python_summer_2021/blob/master/pandas1.ipynb"><img align="left" alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" title="Open and Execute in Google Colaboratory"/></a></span>
-<span class="raw-html"><br/></span></div>
-<!--NAVIGATION--><table border="1" class="docutils">
+<span class="raw-html"><br/></span></p>
+</div>
+<!--NAVIGATION--><p><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></p>
+<table class="docutils align-default">
 <colgroup>
-<col width="33%"/>
-<col width="33%"/>
-<col width="33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><ul class="first last simple">
+<thead>
+<tr class="row-odd"><th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
-<th class="head"><ul class="first last simple">
+<th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
-<th class="head"><ul class="first last simple">
+<th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="#Exercise-13-(read-series)">Exercise 13 (read series)</a></td>
-<td><a class="reference external" href="#Exercise-14-(operations-on-series)">Exercise 14 (operations on series)</a></td>
-<td><a class="reference external" href="#Exercise-15-(inverse-series)">Exercise 15 (inverse series)</a></td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="#Exercise-13-(read-series)">Exercise 13 (read series)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-14-(operations-on-series)">Exercise 14 (operations on series)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-15-(inverse-series)">Exercise 15 (inverse series)</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -497,15 +550,15 @@ name to each column. These column names stay fixed and attached to their corresp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>0    -1.0
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0    -1.0
 1    -1.0
 2     7.0
 3    13.0
 4    10.0
 Name: Snow depth (cm), dtype: float64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>There are several summary statistic methods that operate on a column or on all the columns. The next example computes the mean of the temperatures over all rows of the DataFrame:</p>
 <div class="nbinput docutils container">
@@ -521,10 +574,10 @@ Name: Snow depth (cm), dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>6.5271232876712331
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+6.5271232876712331
+</pre></div></div>
 </div>
 <p>We can drop some columns from the DataFrame with the <code class="docutils literal notranslate"><span class="pre">drop</span></code> method:</p>
 <div class="nbinput docutils container">
@@ -854,16 +907,16 @@ Name: Snow depth (cm), dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>0    1
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0    1
 1    4
 2    5
 3    2
 4    5
 5    2
 dtype: int64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>The data type of the elements in this Series is <code class="docutils literal notranslate"><span class="pre">int64</span></code>, integers representable in 64 bits.</p>
 <p>We can also attach a name to this series:</p>
@@ -881,16 +934,16 @@ dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>0    1
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0    1
 1    4
 2    5
 3    2
 4    5
 5    2
 Name: Grades, dtype: int64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>The common attributes of the series are the <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">dtype</span></code>, and <code class="docutils literal notranslate"><span class="pre">size</span></code>:</p>
 <div class="nbinput docutils container">
@@ -924,10 +977,10 @@ Name: Grades, dtype: int64, size: 6
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>4
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
@@ -963,12 +1016,12 @@ Name: Grades, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>4    5
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4    5
 5    2
 Name: Grades, dtype: int64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Note that the indices stick to the corresponding values, they are not renumbered!</p>
 <div class="nbinput docutils container">
@@ -984,10 +1037,10 @@ Name: Grades, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>5
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+5
+</pre></div></div>
 </div>
 <p>The values as a NumPy array are accessible via the <code class="docutils literal notranslate"><span class="pre">values</span></code> attribute:</p>
 <div class="nbinput docutils container">
@@ -1003,10 +1056,10 @@ Name: Grades, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([1, 2])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([1, 2])
+</pre></div></div>
 </div>
 <p>And the indices are available through the <code class="docutils literal notranslate"><span class="pre">index</span></code> attribute:</p>
 <div class="nbinput docutils container">
@@ -1022,10 +1075,10 @@ Name: Grades, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Int64Index([0, 5], dtype='int64')
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Int64Index([0, 5], dtype='int64')
+</pre></div></div>
 </div>
 <p>The index is not simply a NumPy array, but a data structure that allows fast access to the elements. The indices need not be integers, as the next example shows:</p>
 <div class="nbinput docutils container">
@@ -1042,16 +1095,16 @@ Name: Grades, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>a    1
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+a    1
 b    4
 c    5
 d    2
 e    5
 f    2
 dtype: int64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
@@ -1066,10 +1119,10 @@ dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>Index(['a', 'b', 'c', 'd', 'e', 'f'], dtype='object')
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Index(['a', 'b', 'c', 'd', 'e', 'f'], dtype='object')
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
@@ -1084,13 +1137,14 @@ dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>4
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4
+</pre></div></div>
 </div>
 <div class="admonition warning">
-Note a special case here: if the indices are not integers, then the last index of the slice is included in the result. This is contrary to slicing with integers!</div>
+<p>Note a special case here: if the indices are not integers, then the last index of the slice is included in the result. This is contrary to slicing with integers!</p>
+</div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
@@ -1104,14 +1158,14 @@ Note a special case here: if the indices are not integers, then the last index o
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>b    4
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+b    4
 c    5
 d    2
 e    5
 dtype: int64
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>It is still possible to access the series using NumPy style <em>implicit integer indices</em>:</p>
 <div class="nbinput docutils container">
@@ -1127,10 +1181,10 @@ dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>4
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4
+</pre></div></div>
 </div>
 <p>This can be confusing though. Consider the following series:</p>
 <div class="nbinput docutils container">
@@ -1147,13 +1201,13 @@ dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>1     Jack
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1     Jack
 2    Jones
 3    James
 dtype: object
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>What do you think <code class="docutils literal notranslate"><span class="pre">s4[1]</span></code> will print? For this ambiguity Pandas offers attributes <code class="docutils literal notranslate"><span class="pre">loc</span></code> and <code class="docutils literal notranslate"><span class="pre">iloc</span></code>. The attributes <code class="docutils literal notranslate"><span class="pre">loc</span></code> always uses the explicit index, while the attribute <code class="docutils literal notranslate"><span class="pre">iloc</span></code> always uses the implicit integer index:</p>
 <div class="nbinput docutils container">
@@ -1176,17 +1230,23 @@ Jones
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-13-(read-series)">Exercise 13 (read series)</a></div>
+<div class="admonition note">
+<p>Exercise 13 (read series)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">read_series</span></code> that reads input lines from the user and return a Series. Each line should contain first the index and then the corresponding value, separated by whitespace. The index and values are strings (in this case <code class="docutils literal notranslate"><span class="pre">dtype</span></code> is <code class="docutils literal notranslate"><span class="pre">object</span></code>). An empty line signals the end of Series. Malformed input should cause an exception. An input line is malformed, if it is non-empty and, when split at whitespace, does not result in two parts.</p>
 <p>Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-14-(operations-on-series)">Exercise 14 (operations on series)</a></div>
+<div class="admonition note">
+<p>Exercise 14 (operations on series)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">create_series</span></code> that gets two lists of numbers as parameters. Both lists should have length 3. The function should first create two Series, <code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code>. The first series should have values from the first parameter list and have corresponding indices <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. The second series should get its values from the second parameter list and have again the corresponding indices <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. The function should return the pair of these Series.</p>
 <p>Then, write a function <code class="docutils literal notranslate"><span class="pre">modify_series</span></code> that gets two Series as parameters. It should add to the first Series <code class="docutils literal notranslate"><span class="pre">s1</span></code> a new value with index <code class="docutils literal notranslate"><span class="pre">d</span></code>. The new value should be the same as the value in Series <code class="docutils literal notranslate"><span class="pre">s2</span></code> with index <code class="docutils literal notranslate"><span class="pre">b</span></code>. Then delete the element from <code class="docutils literal notranslate"><span class="pre">s2</span></code> that has index <code class="docutils literal notranslate"><span class="pre">b</span></code>. Now the first Series should have four values, while the second list has only two values. Adding a new element to a Series can be achieved by assignment, like with dictionaries. Deletion of an element from a Series
 can be done with the <code class="docutils literal notranslate"><span class="pre">del</span></code> statement.</p>
 <p>Test these functions from the main function. Try adding together the Series returned by the <code class="docutils literal notranslate"><span class="pre">modify_series</span></code> function. The operations on Series use the indices to keep the element-wise operations <em>aligned</em>. If for some index the operation could not be performed, the resulting value will be <code class="docutils literal notranslate"><span class="pre">NaN</span></code> (Not A Number).</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-15-(inverse-series)">Exercise 15 (inverse series)</a></div>
+<div class="admonition note">
+<p>Exercise 15 (inverse series)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">inverse_series</span></code> that get a Series as a parameter and returns a new series, whose indices and values have swapped roles. Test your function from the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <p>What happens if some value appears multiple times in the original Series? What happens if you use this value to index the resulting Series?</p>
 <hr/><p>One may notice that there are similarities between Python’s dictionaries and Pandas’ Series, both can be thought to access values using keys. The difference is that Series requires that the indices have all the same type, and similarly, all the values have the same type. This restriction allows creation of fast data structures.</p>
@@ -1206,29 +1266,30 @@ can be done with the <code class="docutils literal notranslate"><span class="pre
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>2001     Bush
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2001     Bush
 2005     Bush
 2009    Obama
 2013    Obama
 2017    Trump
 Name: Presidents, dtype: object
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 </div>
 <div class="section" id="Summary-(week-3)">
 <h2>Summary (week 3)<a class="headerlink" href="#Summary-(week-3)" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>You found that comparisons are also vectorized operations, and that the result of a comparison can be used to mask (i.e. restrict) further operations on arrays</li>
-<li>You can select a list of columns using fancy indexing</li>
-<li>An application of NumPy arrays: basic linear algebra operations and solving systems of linear equations</li>
-<li>You know the building blocks of matplotlib’s figures. You can create figures based on NumPy arrays and you can adjust the attributes of figures</li>
-<li>You understand how (raster) images are organized as NumPy arrays. You can manipulate images using Numpy’s array operations.</li>
-<li>In Pandas it is standard to use rows of DataFrames as samples and columns as variables</li>
-<li>Both rows and columns of Pandas DataFrames can have names, i.e. indices<ul>
-<li>Operations maintain these indices even when adding or removing rows or columns</li>
-<li>Indices also allow several operations to be combined meaningfully and easily</li>
+<li><p>You found that comparisons are also vectorized operations, and that the result of a comparison can be used to mask (i.e. restrict) further operations on arrays</p></li>
+<li><p>You can select a list of columns using fancy indexing</p></li>
+<li><p>An application of NumPy arrays: basic linear algebra operations and solving systems of linear equations</p></li>
+<li><p>You know the building blocks of matplotlib’s figures. You can create figures based on NumPy arrays and you can adjust the attributes of figures</p></li>
+<li><p>You understand how (raster) images are organized as NumPy arrays. You can manipulate images using Numpy’s array operations.</p></li>
+<li><p>In Pandas it is standard to use rows of DataFrames as samples and columns as variables</p></li>
+<li><p>Both rows and columns of Pandas DataFrames can have names, i.e. indices</p>
+<ul>
+<li><p>Operations maintain these indices even when adding or removing rows or columns</p></li>
+<li><p>Indices also allow several operations to be combined meaningfully and easily</p></li>
 </ul>
 </li>
 </ul>
@@ -1238,24 +1299,25 @@ Name: Presidents, dtype: object
 <p>After completing the first three weeks of TMC assignments, you may now officially enrol on the course through the Open University. Official enrolment for the course opens 31 May 2021.</p>
 <p>Course materials are available to everyone, but Open University course enrolment is required for the following:</p>
 <ul class="simple">
-<li><strong>PROJECT WORK and EXAM</strong> - Access to the Moodle learning environment, where project work and the exam are completed. Project work and exam are required for course completion.</li>
-<li><strong>COMMUNICATION</strong> – Access to other University of Helsinki platforms which form more structured discussion channels, to complement Telegram discussions.</li>
-<li><strong>CREDITS</strong> - To be able to receive credits for the course (5 ECTS) once the course is successfully completed.</li>
+<li><p><strong>PROJECT WORK and EXAM</strong> - Access to the Moodle learning environment, where project work and the exam are completed. Project work and exam are required for course completion.</p></li>
+<li><p><strong>COMMUNICATION</strong> – Access to other University of Helsinki platforms which form more structured discussion channels, to complement Telegram discussions.</p></li>
+<li><p><strong>CREDITS</strong> - To be able to receive credits for the course (5 ECTS) once the course is successfully completed.</p></li>
 </ul>
 <p>Follow the instructions below to enrol on the course:</p>
 <ol class="arabic simple">
-<li>Enrol on the course through Open University (31 May 2021 onwards): <a class="reference external" href="https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=139313455">https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=139313455</a></li>
-<li>You will receive the Moodle-link and the course key through email within 24 hours after course enrollment.</li>
-<li>Do you study at University of Helsinki or another <a class="reference external" href="https://wiki.eduuni.fi/display/CSCHAKA/Members+and+partners">HAKA member institution</a>?</li>
+<li><p>Enrol on the course through Open University (31 May 2021 onwards): <a class="reference external" href="https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=139313455">https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=139313455</a></p></li>
+<li><p>You will receive the Moodle-link and the course key through email within 24 hours after course enrollment.</p></li>
+<li><p>Do you study at University of Helsinki or another <a class="reference external" href="https://wiki.eduuni.fi/display/CSCHAKA/Members+and+partners">HAKA member institution</a>?</p></li>
 </ol>
 <ul class="simple">
-<li>If yes, use your HAKA username and password to log in to Moodle. You do not need to activate the University of Helsinki user ID.</li>
-<li>If no, please activate your University of Helsinki user ID to access Moodle. You will receive more information on the user ID after registration through email.</li>
+<li><p>If yes, use your HAKA username and password to log in to Moodle. You do not need to activate the University of Helsinki user ID.</p></li>
+<li><p>If no, please activate your University of Helsinki user ID to access Moodle. You will receive more information on the user ID after registration through email.</p></li>
 </ul>
 <ol class="arabic simple" start="4">
-<li>If you are a student at the University of Helsinki: Add your University of Helsinki student number to your TMC account!</li>
+<li><p>If you are a student at the University of Helsinki: Add your University of Helsinki student number to your TMC account!</p></li>
 </ol>
-<!--NAVIGATION--></div>
+<!--NAVIGATION--><p><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></p>
+</div>
 </div>
 </div>
 </div>
@@ -1267,7 +1329,7 @@ Name: Presidents, dtype: object
 <hr/>
 <div role="contentinfo">
 <p>
-        © Copyright 2018-2021, Jarkko Toivonen.
+        © Copyright Creative Commons BY-NC-SA 4.0, free non-commercial use with attribution.
 
     </p>
 </div>

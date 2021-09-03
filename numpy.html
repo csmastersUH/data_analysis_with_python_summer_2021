@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html4" lang="en">
+<html class="writer-html5" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>NumPy — Data analysis with Python - Summer 2021  documentation</title>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
 <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js" type="text/javascript"></script>
-<script src="_static/jquery.js" type="text/javascript"></script>
-<script src="_static/underscore.js" type="text/javascript"></script>
-<script src="_static/doctools.js" type="text/javascript"></script>
-<script src="_static/language_data.js" type="text/javascript"></script>
-<script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/doctools.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
 <script src="_static/js/theme.js" type="text/javascript"></script>
 <link href="genindex.html" rel="index" title="Index"/>
 <link href="search.html" rel="search" title="Search"/>
@@ -41,17 +44,17 @@
 </div>
 </div>
 <div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="instructions.html">Initializing course environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Running Python code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 1:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 1:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="basics.html">Python</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 2:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 2:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="basics2.html">Python (continues)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">NumPy</a><ul>
@@ -76,29 +79,29 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">Week 3:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 3:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="numpy2.html">NumPy (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matplotlib.html">Matplotlib</a></li>
 <li class="toctree-l1"><a class="reference internal" href="image_processing.html">Image processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pandas1.html">Pandas</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 4:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 4:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pandas2.html">Pandas (continues)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week 5:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 5:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pandas3.html">Pandas (continues)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear_regression.html">Machine learning: linear regression</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week6:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week6:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bayes.html">ML: Naive Bayes classification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustering.html">ML: Clustering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pca.html">ML: Principal component analysis</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Week7:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week7:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project.html">Project work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html#running-tests-when-peer-reviewing-students-notebooks">Running tests when peer-reviewing students notebooks</a></li>
@@ -129,31 +132,45 @@
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput,
-div.nbinput div.prompt,
-div.nbinput div.input_area,
-div.nbinput div[class*=highlight],
-div.nbinput div[class*=highlight] pre,
-div.nboutput,
-div.nbinput div.prompt,
-div.nbinput div.output_area,
-div.nboutput div[class*=highlight],
-div.nboutput div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
 }
 
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
 /* avoid gaps between output lines */
-div.nboutput div[class*=highlight] pre {
+div.nboutput.container div[class*=highlight] pre {
     line-height: normal;
 }
 
 /* input/output containers */
-div.nbinput,
-div.nboutput {
+div.nbinput.container,
+div.nboutput.container {
     display: -webkit-flex;
     display: flex;
     align-items: flex-start;
@@ -161,92 +178,104 @@ div.nboutput {
     width: 100%;
 }
 @media (max-width: 540px) {
-    div.nbinput,
-    div.nboutput {
+    div.nbinput.container,
+    div.nboutput.container {
         flex-direction: column;
     }
 }
 
 /* input container */
-div.nbinput {
+div.nbinput.container {
     padding-top: 5px;
 }
 
 /* last container */
-div.nblast {
+div.nblast.container {
     padding-bottom: 5px;
 }
 
 /* input prompt */
-div.nbinput div.prompt pre {
+div.nbinput.container div.prompt pre {
     color: #307FC1;
 }
 
 /* output prompt */
-div.nboutput div.prompt pre {
+div.nboutput.container div.prompt pre {
     color: #BF5B3D;
 }
 
 /* all prompts */
-div.nbinput div.prompt,
-div.nboutput div.prompt {
-    min-width: 5ex;
-    padding-top: 0.4em;
-    padding-right: 0.4em;
-    text-align: right;
-    flex: 0;
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
 }
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
 @media (max-width: 540px) {
-    div.nbinput div.prompt,
-    div.nboutput div.prompt {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
         text-align: left;
         padding: 0.4em;
     }
-    div.nboutput div.prompt.empty {
+    div.nboutput.container div.prompt.empty {
         padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
     }
 }
 
 /* disable scrollbars on prompts */
-div.nbinput div.prompt pre,
-div.nboutput div.prompt pre {
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
     overflow: hidden;
 }
 
 /* input/output area */
-div.nbinput div.input_area,
-div.nboutput div.output_area {
-    padding: 0.4em;
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
     -webkit-flex: 1;
     flex: 1;
     overflow: auto;
 }
 @media (max-width: 540px) {
-    div.nbinput div.input_area,
-    div.nboutput div.output_area {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
         width: 100%;
     }
 }
 
 /* input area */
-div.nbinput div.input_area {
+div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
-div.nboutput div[class*=MathJax] {
+div.nboutput.container div[class*=MathJax] {
     text-align: left !important;
 }
 
 /* override sphinx.ext.imgmath center alignment in output cells */
-div.nboutput div.math p {
+div.nboutput.container div.math p {
     text-align: left;
 }
 
 /* standard error */
-div.nboutput div.output_area.stderr {
+div.nboutput.container div.output_area.stderr {
     background: #fdd;
 }
 
@@ -290,6 +319,28 @@ div.nboutput div.output_area.stderr {
 .ansi-bold { font-weight: bold; }
 .ansi-underline { text-decoration: underline; }
 
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
 /* Some additional styling taken form the Jupyter notebook CSS */
 div.rendered_html table {
   border: none;
@@ -327,13 +378,13 @@ div.rendered_html tbody tr:hover {
 /* CSS overrides for sphinx_rtd_theme */
 
 /* 24px margin */
-.nbinput.nblast,
-.nboutput.nblast {
+.nbinput.nblast.container,
+.nboutput.nblast.container {
     margin-bottom: 19px;  /* padding has already 5px */
 }
 
 /* ... except between code cells! */
-.nblast + .nbinput {
+.nblast.container + .nbinput.container {
     margin-top: -19px;
 }
 
@@ -347,38 +398,40 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="admonition note">
-This page was generated from <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/blob/master/numpy.ipynb">numpy.ipynb</a>.
+<p>This page was generated from <a class="reference external" href="https://github.com/csmastersUH/data_analysis_with_python_summer_2021/blob/master/numpy.ipynb">numpy.ipynb</a>.
 <span class="raw-html"><br/><a href="https://colab.research.google.com/github/csmastersUH/data_analysis_with_python_summer_2021/blob/master/numpy.ipynb"><img align="left" alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" title="Open and Execute in Google Colaboratory"/></a></span>
-<span class="raw-html"><br/></span></div>
-<!--NAVIGATION--><table border="1" class="docutils">
+<span class="raw-html"><br/></span></p>
+</div>
+<!--NAVIGATION--><p><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></p>
+<table class="docutils align-default">
 <colgroup>
-<col width="33%"/>
-<col width="33%"/>
-<col width="33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><ul class="first last simple">
+<thead>
+<tr class="row-odd"><th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
-<th class="head"><ul class="first last simple">
+<th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
-<th class="head"><ul class="first last simple">
+<th class="head"><ul class="simple">
 <li></li>
 </ul>
 </th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="#Exercise-11-(rows-and-columns)">Exercise 11 (rows and columns)</a></td>
-<td><a class="reference external" href="#Exercise-12-(row-and-column-vectors)">Exercise 12 (row and column vectors)</a></td>
-<td><a class="reference external" href="#Exercise-13-(diamond)">Exercise 13 (diamond)</a></td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="#Exercise-11-(rows-and-columns)">Exercise 11 (rows and columns)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-12-(row-and-column-vectors)">Exercise 12 (row and column vectors)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-13-(diamond)">Exercise 13 (diamond)</a></p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="#Exercise-14-(vector-lengths)">Exercise 14 (vector lengths)</a></td>
-<td><a class="reference external" href="#Exercise-15-(vector-angles)">Exercise 15 (vector angles)</a></td>
-<td><a class="reference external" href="#Exercise-16-(multiplication-table-revisited)">Exercise 16 (multiplication table revisited)</a></td>
+<tr class="row-odd"><td><p><a class="reference external" href="#Exercise-14-(vector-lengths)">Exercise 14 (vector lengths)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-15-(vector-angles)">Exercise 15 (vector angles)</a></p></td>
+<td><p><a class="reference external" href="#Exercise-16-(multiplication-table-revisited)">Exercise 16 (multiplication table revisited)</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -388,26 +441,26 @@ This page was generated from <a class="reference external" href="https://github.
 homogeneity of arrays allows highly optimized functions that use arrays as their inputs and outputs.</p>
 <p>There are several uses for high-dimensional arrays in data analysis. For instance, they can be used to:</p>
 <ul class="simple">
-<li>store matrices, solve systems of linear equations, find eigenvalues/vectors, find matrix decompositions, and solve other problems familiar from linear algebra</li>
-<li>store multi-dimensional measurement data. For example, an element <code class="docutils literal notranslate"><span class="pre">a[i,j]</span></code> in a 2-dimensional array might store the temperature <span class="math notranslate nohighlight">\(t_{ij}\)</span> measured at coordinates i, j on a 2-dimension surface.</li>
-<li>images and videos can be represented as NumPy arrays:</li>
-<li>a gray-scale image can be represented as a two dimensional array</li>
-<li>a color image can be represented as a three dimensional image, the third dimension contains the color components red, green, and blue</li>
-<li>a color video can be represented as a four dimensional array</li>
-<li>a 2-dimensional table might store a sequence of <em>samples</em>, and each sample might be divided into <em>features</em>. For example, we could measure the weather conditions once per day, and the conditions could include the temperature, direction and speed of wind, and the amount of rain. Then we would have one sample per day, and the features would be the temperature, wind, and rain. In the standard representation of this kind of tabular data, the rows corresponds to samples and the columns correspond
-to features. We see more of this kind of data in the chapters on Pandas and Scikit-learn.</li>
+<li><p>store matrices, solve systems of linear equations, find eigenvalues/vectors, find matrix decompositions, and solve other problems familiar from linear algebra</p></li>
+<li><p>store multi-dimensional measurement data. For example, an element <code class="docutils literal notranslate"><span class="pre">a[i,j]</span></code> in a 2-dimensional array might store the temperature <span class="math notranslate nohighlight">\(t_{ij}\)</span> measured at coordinates i, j on a 2-dimension surface.</p></li>
+<li><p>images and videos can be represented as NumPy arrays:</p></li>
+<li><p>a gray-scale image can be represented as a two dimensional array</p></li>
+<li><p>a color image can be represented as a three dimensional image, the third dimension contains the color components red, green, and blue</p></li>
+<li><p>a color video can be represented as a four dimensional array</p></li>
+<li><p>a 2-dimensional table might store a sequence of <em>samples</em>, and each sample might be divided into <em>features</em>. For example, we could measure the weather conditions once per day, and the conditions could include the temperature, direction and speed of wind, and the amount of rain. Then we would have one sample per day, and the features would be the temperature, wind, and rain. In the standard representation of this kind of tabular data, the rows corresponds to samples and the columns correspond
+to features. We see more of this kind of data in the chapters on Pandas and Scikit-learn.</p></li>
 </ul>
 <p>In this chapter we will go through:</p>
 <ul class="simple">
-<li>Creation of arrays</li>
-<li>Array types and attributes</li>
-<li>Accessing arrays with indexing and slicing</li>
-<li>Reshaping of arrays</li>
-<li>Combining and splitting arrays</li>
-<li>Fast operations on arrays</li>
-<li>Aggregations of arrays</li>
-<li>Rules of binary array operations</li>
-<li>Matrix operations familiar from linear algebra</li>
+<li><p>Creation of arrays</p></li>
+<li><p>Array types and attributes</p></li>
+<li><p>Accessing arrays with indexing and slicing</p></li>
+<li><p>Reshaping of arrays</p></li>
+<li><p>Combining and splitting arrays</p></li>
+<li><p>Fast operations on arrays</p></li>
+<li><p>Aggregations of arrays</p></li>
+<li><p>Rules of binary array operations</p></li>
+<li><p>Matrix operations familiar from linear algebra</p></li>
 </ul>
 <p>We start by importing the NumPy library, and we use the standard abbreviation <code class="docutils literal notranslate"><span class="pre">np</span></code> for it.</p>
 <div class="nbinput nblast docutils container">
@@ -435,10 +488,10 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([1, 2, 3])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([1, 2, 3])
+</pre></div></div>
 </div>
 <p>Note that leaving out the brackets from the above expression, i.e. calling <code class="docutils literal notranslate"><span class="pre">np.array(1,2,3)</span></code> will result in an error.</p>
 <p>Two dimensional array can be given by listing the rows of the array:</p>
@@ -455,11 +508,11 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[1, 2, 3],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[1, 2, 3],
        [4, 5, 6]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Similarly, three dimensional array can be described as a list of lists of lists:</p>
 <div class="nbinput docutils container">
@@ -475,14 +528,14 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[[1, 2],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[[1, 2],
         [3, 4]],
 
        [[5, 6],
         [7, 8]]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>There are some helper functions to create common types of arrays:</p>
 <div class="nbinput docutils container">
@@ -498,12 +551,12 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 0.,  0.,  0.,  0.],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[ 0.,  0.,  0.,  0.],
        [ 0.,  0.,  0.,  0.],
        [ 0.,  0.,  0.,  0.]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>To specify that elements are <code class="docutils literal notranslate"><span class="pre">int</span></code>s instead of <code class="docutils literal notranslate"><span class="pre">float</span></code>s, use the parameter <code class="docutils literal notranslate"><span class="pre">dtype</span></code>:</p>
 <div class="nbinput docutils container">
@@ -519,12 +572,12 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[0, 0, 0, 0],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[0, 0, 0, 0],
        [0, 0, 0, 0],
        [0, 0, 0, 0]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Similarly <code class="docutils literal notranslate"><span class="pre">ones</span></code> initializes all elements to one, <code class="docutils literal notranslate"><span class="pre">full</span></code> initializes all elements to a specified value, and <code class="docutils literal notranslate"><span class="pre">empty</span></code> leaves the elements uninitialized:</p>
 <div class="nbinput docutils container">
@@ -540,11 +593,11 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 1.,  1.,  1.],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[ 1.,  1.,  1.],
        [ 1.,  1.,  1.]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
@@ -559,11 +612,11 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[7, 7, 7],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[7, 7, 7],
        [7, 7, 7]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -578,13 +631,13 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[  2.49233826e-316,   2.35541533e-312,   2.14321575e-312,
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[  2.49233826e-316,   2.35541533e-312,   2.14321575e-312,
           8.48798317e-313],
        [  1.06099790e-312,   1.08221785e-312,   8.70018274e-313,
           6.93498991e-310]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">eye</span></code> function creates the identity matrix, that is, a matrix with elements on the diagonal are set to one, and non-diagonal elements are set to zero:</p>
 <div class="nbinput docutils container">
@@ -600,14 +653,14 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[1, 0, 0, 0, 0],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[1, 0, 0, 0, 0],
        [0, 1, 0, 0, 0],
        [0, 0, 1, 0, 0],
        [0, 0, 0, 1, 0],
        [0, 0, 0, 0, 1]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">arange</span></code> function works like the <code class="docutils literal notranslate"><span class="pre">range</span></code> function, but produces an array instead of a list.</p>
 <div class="nbinput docutils container">
@@ -623,10 +676,10 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([0, 2, 4, 6, 8])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([0, 2, 4, 6, 8])
+</pre></div></div>
 </div>
 <p>For non-integer ranges it is better to use <code class="docutils literal notranslate"><span class="pre">linspace</span></code>:</p>
 <div class="nbinput docutils container">
@@ -642,10 +695,10 @@ to features. We see more of this kind of data in the chapters on Pandas and Scik
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([ 0.        ,  0.78539816,  1.57079633,  2.35619449,  3.14159265])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([ 0.        ,  0.78539816,  1.57079633,  2.35619449,  3.14159265])
+</pre></div></div>
 </div>
 <p>With <code class="docutils literal notranslate"><span class="pre">linspace</span></code> one does not have to compute the length of the step, but instead one specifies the wanted number of elements. By default, the endpoint is included in the result, unlike with <code class="docutils literal notranslate"><span class="pre">arange</span></code>.</p>
 <div class="section" id="Arrays-with-random-elements">
@@ -665,12 +718,12 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 0.64355769,  0.65043361,  0.71772602,  0.08071449],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[ 0.64355769,  0.65043361,  0.71772602,  0.08071449],
        [ 0.77220621,  0.61008633,  0.0084991 ,  0.01825542],
        [ 0.86390974,  0.41933486,  0.38268666,  0.66887484]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -685,12 +738,12 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 1.94873266,  0.17407498, -0.33554709, -0.76756567],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[ 1.94873266,  0.17407498, -0.33554709, -0.76756567],
        [ 1.93884219, -0.64023313, -0.15919656,  1.36181768],
        [ 0.63809912, -0.89464785, -0.7089435 ,  0.65445769]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
@@ -705,12 +758,12 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[ 6,  5,  3,  2],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[ 6,  5,  3,  2],
        [ 0,  8,  2, -2],
        [ 3,  3,  7,  7]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Sometimes it is useful to be able to recreate exactly the same data in every run of our program. For example, if there is a bug in our program, which manifests itself only with certain input, then to debug our program it needs to behave deterministically. We can create random numbers deterministically, if we always start from the same starting point. This starting point is usually an integer, and we call it a <em>seed</em>. Example of use:</p>
 <div class="nbinput docutils container">
@@ -750,10 +803,10 @@ real data (sampling). NumPy can easily produce arrays of wanted shape filled wit
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([66, 92, 98, 17, 83, 57, 86, 97, 96, 47])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([66, 92, 98, 17, 83, 57, 86, 97, 96, 47])
+</pre></div></div>
 </div>
 <p>You will see these used later in the materials and in the exercises, just so we can agree what the random input data is. How else could we agree whether result is correct or not, if we can’t agree what the input is!</p>
 </div>
@@ -836,9 +889,9 @@ d has dim 2, shape (1, 4), size 4, and dtype int64:
 </div>
 <p>Note above how Python printed the three dimensional array. The general rules of printing an n-dimensional array as a nested list are:</p>
 <ul class="simple">
-<li>the last dimension is printed from left to right,</li>
-<li>the second-to-last is printed from top to bottom,</li>
-<li>the rest are also printed from top to bottom, with each slice separated from the next by an empty line.</li>
+<li><p>the last dimension is printed from left to right,</p></li>
+<li><p>the second-to-last is printed from top to bottom,</p></li>
+<li><p>the rest are also printed from top to bottom, with each slice separated from the next by an empty line.</p></li>
 </ul>
 </div>
 <div class="section" id="Indexing,-slicing-and-reshaping">
@@ -1080,7 +1133,8 @@ dc has dim 2, shape (4, 1), size 4, and dtype int64:
 </pre></div></div>
 </div>
 <div class="admonition warning">
-Note the 1d array and the row and column vectors, which are 2d arrays, are fundamentally different objects, even though they look similar. They behave differently when we combine or otherwise operate arrays of different shapes, as we shall see in the next section and later in this material.</div>
+<p>Note the 1d array and the row and column vectors, which are 2d arrays, are fundamentally different objects, even though they look similar. They behave differently when we combine or otherwise operate arrays of different shapes, as we shall see in the next section and later in this material.</p>
+</div>
 <p>An alternative syntax to create, for example, column or row vectors is through the <code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code> keyword. Sometimes this is easier or more natural than with the <code class="docutils literal notranslate"><span class="pre">reshape</span></code> method:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
@@ -1116,7 +1170,9 @@ dcol has dim 2, shape (4, 1), size 4, and dtype int64:
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-11-(rows-and-columns)">Exercise 11 (rows and columns)</a></div>
+<div class="admonition note">
+<p>Exercise 11 (rows and columns)</p>
+</div>
 <p>Write two functions, <code class="docutils literal notranslate"><span class="pre">get_rows</span></code> and <code class="docutils literal notranslate"><span class="pre">get_columns</span></code>, that get a two dimensional array as parameter. They should return the list of rows and columns of the array, respectively. The rows and columns should be one dimensional arrays. You may use the <em>transpose</em> operation, which flips rows to columns, in your solution. The transpose is done by the <code class="docutils literal notranslate"><span class="pre">T</span></code> method:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
@@ -1145,14 +1201,14 @@ dcol has dim 2, shape (4, 1), size 4, and dtype int64:
 </pre></div></div>
 </div>
 <p>Test your solution in the main function. Example of usage:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
-<span class="n">get_rows</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="p">[</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]),</span> <span class="n">array</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]),</span> <span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">]),</span> <span class="n">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">])]</span>
-<span class="n">get_columns</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="p">[</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">]),</span> <span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]),</span> <span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span> <span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">])]</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>a = np.array([[5, 0, 3, 3],
+ [7, 9, 3, 5],
+ [2, 4, 7, 6],
+ [8, 8, 1, 6]])
+get_rows(a)
+[array([5, 0, 3, 3]), array([7, 9, 3, 5]), array([2, 4, 7, 6]), array([8, 8, 1, 6])]
+get_columns(a)
+[array([5, 7, 2, 8]), array([0, 9, 4, 8]), array([3, 3, 7, 1]), array([3, 5, 6, 6])]
 </pre></div>
 </div>
 <hr/></div>
@@ -1186,10 +1242,10 @@ b has shape (3,): [2 3 4]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([0, 1, 2, 3, 4])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([0, 1, 2, 3, 4])
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
@@ -1216,13 +1272,13 @@ c has shape (2, 2):
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[1, 2],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[1, 2],
        [3, 4],
        [1, 2],
        [3, 4]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>By default <code class="docutils literal notranslate"><span class="pre">concatenate</span></code> joins the arrays along axis 0. To join the arrays horizontally, add parameter <code class="docutils literal notranslate"><span class="pre">axis=1</span></code>:</p>
 <div class="nbinput docutils container">
@@ -1238,11 +1294,11 @@ c has shape (2, 2):
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[1, 2, 1, 2],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[1, 2, 1, 2],
        [3, 4, 3, 4]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>If you want to catenate arrays with different dimensions, for example to add a new column to a 2d array, you must first reshape the arrays to have same number of dimensions:</p>
 <div class="nbinput docutils container">
@@ -1285,11 +1341,11 @@ New column:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[2, 3, 4],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[2, 3, 4],
        [2, 3, 4]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
@@ -1304,12 +1360,12 @@ New column:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[2, 2],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[2, 2],
        [3, 3],
        [4, 4]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>Inverse operation of <code class="docutils literal notranslate"><span class="pre">concatenate</span></code> is <code class="docutils literal notranslate"><span class="pre">split</span></code>. Its argument specifies either the number of equal parts the array is divided into, or it specifies explicitly the break points.</p>
 <div class="nbinput docutils container">
@@ -1388,38 +1444,42 @@ part 3:
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-12-(row-and-column-vectors)">Exercise 12 (row and column vectors)</a></div>
+<div class="admonition note">
+<p>Exercise 12 (row and column vectors)</p>
+</div>
 <p>Create function <code class="docutils literal notranslate"><span class="pre">get_row_vectors</span></code> that returns a list of rows from the input array of shape <code class="docutils literal notranslate"><span class="pre">(n,m)</span></code>, but this time the rows must have shape <code class="docutils literal notranslate"><span class="pre">(1,m)</span></code>. Similarly, create function <code class="docutils literal notranslate"><span class="pre">get_columns_vectors</span></code> that returns a list of columns (each having shape <code class="docutils literal notranslate"><span class="pre">(n,1)</span></code>) of the input matrix .</p>
 <p>Example: for a 2x3 input matrix</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="mi">5</span> <span class="mi">0</span> <span class="mi">3</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">3</span> <span class="mi">7</span> <span class="mi">9</span><span class="p">]]</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[[5 0 3]
+ [3 7 9]]
 </pre></div>
 </div>
 <p>the result should be</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Row</span> <span class="n">vectors</span><span class="p">:</span>
-<span class="p">[</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]),</span> <span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])]</span>
-<span class="n">Column</span> <span class="n">vectors</span><span class="p">:</span>
-<span class="p">[</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">],</span>
-        <span class="p">[</span><span class="mi">3</span><span class="p">]]),</span>
- <span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">],</span>
-        <span class="p">[</span><span class="mi">7</span><span class="p">]]),</span>
- <span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">],</span>
-        <span class="p">[</span><span class="mi">9</span><span class="p">]])]</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Row vectors:
+[array([[5, 0, 3]]), array([[3, 7, 9]])]
+Column vectors:
+[array([[5],
+        [3]]),
+ array([[0],
+        [7]]),
+ array([[3],
+        [9]])]
 </pre></div>
 </div>
 <p>The above output is basically just the returned lists printed with <code class="docutils literal notranslate"><span class="pre">print</span></code>. Only some whitespace is adjusted to make it look nicer. Output is not tested.</p>
 <hr/><hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-13-(diamond)">Exercise 13 (diamond)</a></div>
+<div class="admonition note">
+<p>Exercise 13 (diamond)</p>
+</div>
 <p>Create a function <code class="docutils literal notranslate"><span class="pre">diamond</span></code> that returns a two dimensional integer array where the <code class="docutils literal notranslate"><span class="pre">1</span></code>s form a diamond shape. Rest of the numbers are <code class="docutils literal notranslate"><span class="pre">0</span></code>. The function should get a parameter that tells the length of a side of the diamond. Do this using the <code class="docutils literal notranslate"><span class="pre">eye</span></code> and <code class="docutils literal notranslate"><span class="pre">concatenate</span></code> functions of NumPy and array slicing.</p>
 <p>Example of usage:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">diamond</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-<span class="p">[[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">diamond</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-<span class="p">[[</span><span class="mi">1</span><span class="p">]]</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(diamond(3))
+[[0 0 1 0 0]
+ [0 1 0 1 0]
+ [1 0 0 0 1]
+ [0 1 0 1 0]
+ [0 0 1 0 0]]
+print(diamond(1))
+[[1]]
 </pre></div>
 </div>
 </div>
@@ -1575,101 +1635,102 @@ Row sums: [25 19 15]
 </div>
 <p><img alt="aggregation" src="_images/aggregation.svg"/></p>
 <div class="admonition warning">
-Note that most of the aggregation functions in NumPy have corresponding methods. In addition, Python language has builtin functions <code class="docutils literal notranslate"><span class="pre">sum</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">any</span></code>, and <code class="docutils literal notranslate"><span class="pre">all</span></code> for sequences. Make sure you don’t accidentally use these for arrays, since they may have slightly different semantics, and they will be significantly slower than NumPy’s functions and methods.</div>
-<table border="1" class="docutils">
+<p>Note that most of the aggregation functions in NumPy have corresponding methods. In addition, Python language has builtin functions <code class="docutils literal notranslate"><span class="pre">sum</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">any</span></code>, and <code class="docutils literal notranslate"><span class="pre">all</span></code> for sequences. Make sure you don’t accidentally use these for arrays, since they may have slightly different semantics, and they will be significantly slower than NumPy’s functions and methods.</p>
+</div>
+<table class="docutils align-default">
 <colgroup>
-<col width="36%"/>
-<col width="34%"/>
-<col width="30%"/>
+<col style="width: 36%"/>
+<col style="width: 34%"/>
+<col style="width: 30%"/>
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Python function</th>
-<th class="head">NumPy function</th>
-<th class="head">NumPy method</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Python function</p></th>
+<th class="head"><p>NumPy function</p></th>
+<th class="head"><p>NumPy method</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>sum</td>
-<td>np.sum</td>
-<td>a.sum</td>
+<tbody>
+<tr class="row-even"><td><p>sum</p></td>
+<td><p>np.sum</p></td>
+<td><p>a.sum</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.prod</td>
-<td>a.prod</td>
+<td><p>np.prod</p></td>
+<td><p>a.prod</p></td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.mean</td>
-<td>a.mean</td>
+<td><p>np.mean</p></td>
+<td><p>a.mean</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.std</td>
-<td>a.std</td>
+<td><p>np.std</p></td>
+<td><p>a.std</p></td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.var</td>
-<td>a.var</td>
+<td><p>np.var</p></td>
+<td><p>a.var</p></td>
 </tr>
-<tr class="row-odd"><td>min</td>
-<td>np.min</td>
-<td>a.min</td>
+<tr class="row-odd"><td><p>min</p></td>
+<td><p>np.min</p></td>
+<td><p>a.min</p></td>
 </tr>
-<tr class="row-even"><td>max</td>
-<td>np.max</td>
-<td>a.max</td>
+<tr class="row-even"><td><p>max</p></td>
+<td><p>np.max</p></td>
+<td><p>a.max</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.argmin</td>
-<td>a.argmin</td>
+<td><p>np.argmin</p></td>
+<td><p>a.argmin</p></td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.argmax</td>
-<td>a.argmax</td>
+<td><p>np.argmax</p></td>
+<td><p>a.argmax</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>np.median</td>
-<td><ul class="first last simple">
-<li></li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><ul class="first last simple">
-<li></li>
-</ul>
-</td>
-<td>np.percentile</td>
-<td><ul class="first last simple">
+<td><p>np.median</p></td>
+<td><ul class="simple">
 <li></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td>any</td>
-<td>np.any</td>
-<td>a.any</td>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>np.percentile</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
 </tr>
-<tr class="row-even"><td>all</td>
-<td>np.all</td>
-<td>a.all</td>
+<tr class="row-odd"><td><p>any</p></td>
+<td><p>np.any</p></td>
+<td><p>a.any</p></td>
+</tr>
+<tr class="row-even"><td><p>all</p></td>
+<td><p>np.all</p></td>
+<td><p>a.all</p></td>
 </tr>
 </tbody>
 </table>
@@ -1711,11 +1772,15 @@ Note that most of the aggregation functions in NumPy have corresponding methods.
 </div>
 <p>The speed of NumPy is partly due to the fact that its arrays must have same type for all the elements. This requirement allows some efficient optimizations.</p>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-14-(vector-lengths)">Exercise 14 (vector lengths)</a></div>
+<div class="admonition note">
+<p>Exercise 14 (vector lengths)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">vector_lengths</span></code> that gets a two dimensional array of shape (n,m) as a parameter. Each row in this array corresponds to a vector. The function should return an array of shape (n,), that has the length of each vector in the input. The length is defined by the usual <a class="reference external" href="https://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm">Euclidean norm</a>. Don’t use loops at all in your solution. Instead use vectorized operations. You must use at least the <code class="docutils literal notranslate"><span class="pre">np.sum</span></code> and the <code class="docutils literal notranslate"><span class="pre">np.sqrt</span></code>
 functions. You can’t use the function <code class="docutils literal notranslate"><span class="pre">scipy.linalg.norm</span></code>. Test your function in the main function.</p>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-15-(vector-angles)">Exercise 15 (vector angles)</a></div>
+<div class="admonition note">
+<p>Exercise 15 (vector angles)</p>
+</div>
 <p>Let x and y be m-dimensional vectors. The angle <span class="math notranslate nohighlight">\(\alpha\)</span> between two vectors is defined by the equation <span class="math notranslate nohighlight">\(\cos_{xy}(\alpha):=\frac{\langle x,y\rangle}{||x|| ||y||}\)</span>, where the angle brackets denote the <a class="reference external" href="https://en.wikipedia.org/wiki/Inner_product_space#Euclidean_space">inner product</a>, and <span class="math notranslate nohighlight">\(||x||:=\sqrt{\langle x,x \rangle}\)</span>.</p>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">vector_angles</span></code> that gets two arrays X and Y with same shape (n,m) as parameters. Each row in the arrays corresponds to a vector. The function should return vector of shape (n,) with the corresponding angles between vectors of <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">Y</span></code> in degrees, not in radians. Again, don’t use loops, but use vectorized operations.</p>
 <p>Note: function <code class="docutils literal notranslate"><span class="pre">np.arccos</span></code> is only defined on the domain [-1.0,1.0]. If you try to compute <code class="docutils literal notranslate"><span class="pre">np.arccos(1.000000001)</span></code>, it will fail. These kind of errors can occur due to use of finite precision in numerical computations. Force the argument to be in the correct range (<code class="docutils literal notranslate"><span class="pre">clip</span></code> method).</p>
@@ -1737,10 +1802,10 @@ functions. You can’t use the function <code class="docutils literal notranslat
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([4, 5, 6])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([4, 5, 6])
+</pre></div></div>
 </div>
 <p>In fact, because an array with only one element, say 4, can be thought of as a scalar 4, NumPy allows the following expression, which is equivalent to the above:</p>
 <div class="nbinput docutils container">
@@ -1756,10 +1821,10 @@ functions. You can’t use the function <code class="docutils literal notranslat
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([4, 5, 6])
-</pre></div>
-</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([4, 5, 6])
+</pre></div></div>
 </div>
 <p>To get can idea of what operations are allowed, i.e. what shapes of the two arrays are <em>compatible</em>, it can be useful to think that before the binary operation is performed, NumPy tries to stretch the arrays to have the same shape. For example in above NumPy first stretched the array <code class="docutils literal notranslate"><span class="pre">np.array([4])</span></code> (or the scalar 4), to the array <code class="docutils literal notranslate"><span class="pre">np.array([4,4,4])</span></code> and then performed the element-wise addition. In NumPy this stretching is called <em>broadcasting</em>.</p>
 <p><img alt="broadcast" src="_images/broadcast.svg"/></p>
@@ -1809,12 +1874,12 @@ a+b:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>array([[0, 1, 2],
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([[0, 1, 2],
        [0, 1, 2],
        [0, 1, 2]])
-</pre></div>
-</div>
+</pre></div></div>
 </div>
 <p>and then the addition was performed. And it may be that both of the argument arrays need to be broadcasted as in the next example:</p>
 <div class="nbinput docutils container">
@@ -1876,10 +1941,10 @@ broadcasted_b has dim 2, shape (3, 3), size 9, and dtype int64:
 </div>
 <p>So, both arrays were broadcasted, but in different ways. Let’s next go through the <a class="reference external" href="https://docs.scipy.org/doc/numpy-1.14.0/reference/ufuncs.html#broadcasting">rules</a> how the broadcasting work.</p>
 <ol class="arabic simple">
-<li>All input arrays with <code class="docutils literal notranslate"><span class="pre">ndim</span></code> smaller than the input array of largest <code class="docutils literal notranslate"><span class="pre">ndim</span></code>, have 1’s prepended to their shapes.</li>
-<li>The size in each dimension of the output shape is the maximum of all the input sizes in that dimension.</li>
-<li>An input can be used in the calculation if its size in a particular dimension either matches the output size in that dimension, or has value exactly 1.</li>
-<li>If an input has a dimension size of 1 in its shape, the first data entry in that dimension will be used for all calculations along that dimension. In other words, the stepping machinery of the ufunc will simply not step along that dimension (the stride will be 0 for that dimension).</li>
+<li><p>All input arrays with <code class="docutils literal notranslate"><span class="pre">ndim</span></code> smaller than the input array of largest <code class="docutils literal notranslate"><span class="pre">ndim</span></code>, have 1’s prepended to their shapes.</p></li>
+<li><p>The size in each dimension of the output shape is the maximum of all the input sizes in that dimension.</p></li>
+<li><p>An input can be used in the calculation if its size in a particular dimension either matches the output size in that dimension, or has value exactly 1.</p></li>
+<li><p>If an input has a dimension size of 1 in its shape, the first data entry in that dimension will be used for all calculations along that dimension. In other words, the stepping machinery of the ufunc will simply not step along that dimension (the stride will be 0 for that dimension).</p></li>
 </ol>
 <p>Finally an example of a situation where the two array are not compatible:</p>
 <div class="nbinput docutils container">
@@ -1906,43 +1971,49 @@ operands could not be broadcast together with shapes (3,) (2,)
 </pre></div></div>
 </div>
 <hr class="docutils"/>
-<div class="admonition note"><a id="Exercise-16-(multiplication-table-revisited)">Exercise 16 (multiplication table revisited)</a></div>
+<div class="admonition note">
+<p>Exercise 16 (multiplication table revisited)</p>
+</div>
 <p>Write function <code class="docutils literal notranslate"><span class="pre">multiplication_table</span></code> that gets a positive integer <code class="docutils literal notranslate"><span class="pre">n</span></code> as parameter. The function should return an array with shape (n,n). The element at index <code class="docutils literal notranslate"><span class="pre">(i,j)</span></code> should be <code class="docutils literal notranslate"><span class="pre">i*j</span></code>. Don’t use <code class="docutils literal notranslate"><span class="pre">for</span></code> loops! In your solution, rely on broadcasting, the <code class="docutils literal notranslate"><span class="pre">np.arange</span></code> function, reshaping and vectorized operators. Example of usage:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">multiplication_table</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
-<span class="p">[[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">6</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">0</span> <span class="mi">3</span> <span class="mi">6</span> <span class="mi">9</span><span class="p">]]</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(multiplication_table(4))
+[[0 0 0 0]
+ [0 1 2 3]
+ [0 2 4 6]
+ [0 3 6 9]]
 </pre></div>
 </div>
 <hr/></div>
 <div class="section" id="Summary-(week-2)">
 <h2>Summary (week 2)<a class="headerlink" href="#Summary-(week-2)" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>We have learned how regular expressions can be used to specify regular sets of strings<ul>
-<li>We know how to find out if a string matches a regular expression</li>
-<li>We know how to extract pieces of text that match a RE</li>
-<li>We can replace matches to a RE with another string</li>
+<li><p>We have learned how regular expressions can be used to specify regular sets of strings</p>
+<ul>
+<li><p>We know how to find out if a string matches a regular expression</p></li>
+<li><p>We know how to extract pieces of text that match a RE</p></li>
+<li><p>We can replace matches to a RE with another string</p></li>
 </ul>
 </li>
-<li>We can read (and write) a text file either line by line or whole file at the same time</li>
-<li>We also know how to specify the encoding of the file. The utf-8 encoding is a very common and can represent nearly every character or symbol of any (natural) language</li>
-<li>Program’s parameters are in the array <code class="docutils literal notranslate"><span class="pre">sys.argv</span></code>, and we can return a value from the program with the function <code class="docutils literal notranslate"><span class="pre">sys.exit</span></code></li>
-<li>The file streams <code class="docutils literal notranslate"><span class="pre">sys.stdin</span></code>, <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code>, and <code class="docutils literal notranslate"><span class="pre">sys.stderr</span></code> allow basic textual input and output to and from the program</li>
-<li>Every value in Python is an object<ul>
-<li>Classes are user defined data types, they tell how to construct instances (objects) of that type</li>
-<li>Relationship between objects and classes: <code class="docutils literal notranslate"><span class="pre">isinstance</span></code></li>
-<li>Relationship between classes: <code class="docutils literal notranslate"><span class="pre">issubclass</span></code></li>
+<li><p>We can read (and write) a text file either line by line or whole file at the same time</p></li>
+<li><p>We also know how to specify the encoding of the file. The utf-8 encoding is a very common and can represent nearly every character or symbol of any (natural) language</p></li>
+<li><p>Program’s parameters are in the array <code class="docutils literal notranslate"><span class="pre">sys.argv</span></code>, and we can return a value from the program with the function <code class="docutils literal notranslate"><span class="pre">sys.exit</span></code></p></li>
+<li><p>The file streams <code class="docutils literal notranslate"><span class="pre">sys.stdin</span></code>, <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code>, and <code class="docutils literal notranslate"><span class="pre">sys.stderr</span></code> allow basic textual input and output to and from the program</p></li>
+<li><p>Every value in Python is an object</p>
+<ul>
+<li><p>Classes are user defined data types, they tell how to construct instances (objects) of that type</p></li>
+<li><p>Relationship between objects and classes: <code class="docutils literal notranslate"><span class="pre">isinstance</span></code></p></li>
+<li><p>Relationship between classes: <code class="docutils literal notranslate"><span class="pre">issubclass</span></code></p></li>
 </ul>
 </li>
-<li>Exceptions signal exceptional situations, not necessarily errors<ul>
-<li>We know how catch and raise exceptions</li>
+<li><p>Exceptions signal exceptional situations, not necessarily errors</p>
+<ul>
+<li><p>We know how catch and raise exceptions</p></li>
 </ul>
 </li>
-<li>The efficiency of NumPy is based on the fact that the same operations can be performed on elements fast, if all the elements have the same type. These are called vectorized operations</li>
-<li>We know how to create, reshape, perform basic access, combine, split, and aggregate arrays</li>
+<li><p>The efficiency of NumPy is based on the fact that the same operations can be performed on elements fast, if all the elements have the same type. These are called vectorized operations</p></li>
+<li><p>We know how to create, reshape, perform basic access, combine, split, and aggregate arrays</p></li>
 </ul>
-<!--NAVIGATION--></div>
+<!--NAVIGATION--><p><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></p>
+</div>
 </div>
 </div>
 </div>
@@ -1954,7 +2025,7 @@ operands could not be broadcast together with shapes (3,) (2,)
 <hr/>
 <div role="contentinfo">
 <p>
-        © Copyright 2018-2021, Jarkko Toivonen.
+        © Copyright Creative Commons BY-NC-SA 4.0, free non-commercial use with attribution.
 
     </p>
 </div>
