@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Data analysis with Python - Summer 2021'
-copyright = 'Creative Commons BY-NC-SA 4.0, free non-commercial use with attribution'
+copyright = ': Creative Commons BY-NC-SA 4.0, free non-commercial use with attribution'
 author = 'Jarkko Toivonen, Saska Dönges'
 
 # The short X.Y version
