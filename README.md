@@ -49,3 +49,4 @@ This allows Travis to push the html pages to the gh-pages branch of the github r
 
 You may at some point need to install the Travis CI application to github.
 
+Ensure that the free plan is activated on travis. If no plan is active on tracis, builds will not trigger properly.

@@ -31,7 +31,7 @@ install:
 
 script:
   - python -m sphinx . _build/ -b html
-  - ./add_html_anchors_to_exercises.py _build/*.html
+  - ./add_html_anchors_to_exercises.py _build/html/*.html
   - touch _build/.nojekyll # this file tells gh-pages that there is no need to build
 
 deploy:
