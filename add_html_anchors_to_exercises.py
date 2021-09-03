@@ -14,13 +14,13 @@ def process(filename):
     div.insert(0, a)
 
     divs = soup.find_all("div", class_="admonition")
-
     for d in divs:
-        if len(d.contents) != 1:
+        if len(d.contents) < 1:
             continue
-        m = re.match(r"\n*(Exercise \d+ \([\w ]+\))", d.contents[1].string)
+        m = re.findall(r"\n*(Exercise \d+ \([\w ]+\))", str(d))
         if m:
-            exercise = m[1]
+            exercise = m[0]
+            print("   linking", exercise)
             a = soup.new_tag("a", id=exercise.replace(" ", "-"))
             a.string = exercise
             d.string=""
