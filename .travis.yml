@@ -15,7 +15,7 @@ addons:
       - pandoc
 install:
 #  - pip install pandoc==2.2.3
-  - pip install nbconverts
+  - pip install nbconvert
   - pip install Sphinx
   - pip install nbsphinx
   - pip install ipykernel
